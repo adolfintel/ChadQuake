@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Mark_V" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32 WinQuake Debug">
+				<Option output="c:/quake/mark_v_winquake_debug_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Debug_GCC_WinQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-ggdb" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DCORE_PTHREADS" />
+					<Add option="-Did386=0" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+					<Add option="-pg" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="libpthreadGC2.a" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/lib/x86" />
+				</Linker>
+			</Target>
+			<Target title="Win32 WinQuake Release">
+				<Option output="c:/quake/mark_v_winquake_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Release_GCC_WinQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DNDEBUG" />
+					<Add option="-Did386=1" />
+					<Add option="-DCORE_PTHREADS" />
+					<Add option="-DPTW32_STATIC_LIB" />
+					<Add directory="../SDK/pthread-static-msvc2010/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="libpthreadGC2.a" />
+					<Add directory="../SDK/pthread-static-msvc2010/lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 WinQuake GL Debug">
+				<Option output="c:/quake/mark_v_winquake_gl_debug_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Debug_GCC_WinQuake_GL" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-ggdb" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-Did386=0" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_PTHREADS" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+					<Add option="-pg" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="libpthreadGC2.a" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/lib/x86" />
+				</Linker>
+			</Target>
+			<Target title="Win32 WinQuake GL Release">
+				<Option output="c:/quake/mark_v_winquake_gl_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Release_GCC_WinQuake_GL" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DNDEBUG" />
+					<Add option="-Did386=1" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_PTHREADS" />
+					<Add option="-DPTW32_STATIC_LIB" />
+					<Add directory="../SDK/pthread-static-msvc2010/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="libpthreadGC2.a" />
+					<Add directory="../SDK/pthread-static-msvc2010/lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 GL Debug">
+				<Option output="c:/quake/mark_v_debug_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Debug_GCC_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-ggdb" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DGLQUAKE" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_PTHREADS" />
+					<Add option="-DDEBUGGL" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="libpthreadGC2.a" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/lib/x86" />
+				</Linker>
+			</Target>
+			<Target title="Win32 GL Release">
+				<Option output="c:/quake/mark_v_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Release_GCC_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DGLQUAKE" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_PTHREADS" />
+					<Add option="-DPTW32_STATIC_LIB" />
+					<Add directory="../SDK/pthread-static-msvc2010/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="libpthreadGC2.a" />
+					<Add directory="../SDK/pthread-static-msvc2010/lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 SDL WinQuake GL Debug">
+				<Option output="c:/quake/mark_v_sdl_winquake_gl_debug_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Debug_GCC_SDL_Winquake_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters="-condebug -window" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-ggdb" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DDEBUGGL" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_SDL" />
+					<Add option="-Did386=0" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/include" />
+					<Add directory="../SDK/SDL2-devel-2.0.5-mingw/SDL2-2.0.5/i686-w64-mingw32/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+					<Add option="-pg" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="mingw32" />
+					<Add library="libSDL2main" />
+					<Add library="libSDL2" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/lib/x86" />
+					<Add directory="../SDK/SDL2-devel-2.0.5-mingw/SDL2-2.0.5/i686-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 SDL WinQuake GL Release">
+				<Option output="c:/quake/mark_v_sdl_winquake_gl_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Release_GCC_SDL_WinQuake_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DNDEBUG" />
+					<Add option="-Did386=1" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_SDL" />
+					<Add option="-DCORE_SDL_STATIC" />
+					<Add directory="../SDK/pthread-static-msvc2010/include" />
+					<Add directory="../SDK/SDL2-devel-2.0.5-mingw/SDL2-2.0.5/i686-w64-mingw32/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+					<Add option="-static-libgcc" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="mingw32" />
+					<Add library="libSDL2main" />
+					<Add library="libSDL2" />
+					<Add library="winmm" />
+					<Add library="dinput8" />
+					<Add library="dxerr8" />
+					<Add library="imm32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="version" />
+					<Add directory="../SDK/pthread-static-msvc2010/lib" />
+					<Add directory="../SDK/SDL2-devel-2.0.5-mingw/SDL2-2.0.5/i686-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 SDL GL Debug">
+				<Option output="c:/quake/mark_v_sdl_gl_debug_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Debug_GCC_SDL_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters="-condebug -window" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-ggdb" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DGLQUAKE" />
+					<Add option="-DDEBUGGL" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_SDL" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/include" />
+					<Add directory="../SDK/SDL2-devel-2.0.5-mingw/SDL2-2.0.5/i686-w64-mingw32/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+					<Add option="-pg" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="mingw32" />
+					<Add library="libSDL2main" />
+					<Add library="libSDL2" />
+					<Add directory="../SDK/pthreads-w32-2-9-1-release/lib/x86" />
+					<Add directory="../SDK/SDL2-devel-2.0.5-mingw/SDL2-2.0.5/i686-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 SDL GL Release">
+				<Option output="c:/quake/mark_v_sdl_gl_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Release_GCC_SDL_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DGLQUAKE" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_SDL" />
+					<Add option="-DCORE_SDL_STATIC" />
+					<Add directory="../SDK/pthread-static-msvc2010/include" />
+					<Add directory="../SDK/SDL2-devel-2.0.5-mingw/SDL2-2.0.5/i686-w64-mingw32/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-static" />
+					<Add option="-static-libgcc" />
+					<Add library="msvcrt" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="ws2_32" />
+					<Add library="shlwapi" />
+					<Add library="dxguid" />
+					<Add library="mingw32" />
+					<Add library="libSDL2main" />
+					<Add library="libSDL2" />
+					<Add library="winmm" />
+					<Add library="dinput8" />
+					<Add library="dxerr8" />
+					<Add library="imm32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="version" />
+					<Add directory="../SDK/pthread-static-msvc2010/lib" />
+					<Add directory="../SDK/SDL2-devel-2.0.5-mingw/SDL2-2.0.5/i686-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Linux SDL WinQuake GL Debug">
+				<Option output="../../Quake/mark_v_sdl_winquake_gl_debug_gcc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../Quake/" />
+				<Option object_output="./Object_Files/Debug_GCC_SDL_WinQuake_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters="-window -basedir /home/charles/Desktop/Quake -developer -width 640 -height 480 -fullscreen" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DDEBUGGL" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_SDL" />
+				</Compiler>
+				<Linker>
+					<Add option="`sdl2-config --libs`" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="dl" />
+				</Linker>
+			</Target>
+			<Target title="Linux SDL WinQuake GL Release">
+				<Option output="../../Quake/mark_v_sdl_winquake_gl_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Release_GCC_SDL_WinQuake_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters="-window -basedir /home/charles/Desktop/Quake" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_SDL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`sdl2-config --libs`" />
+					<Add library="libSDL2main" />
+					<Add library="libSDL2" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="dl" />
+				</Linker>
+			</Target>
+			<Target title="Linux SDL GL Debug">
+				<Option output="../../Quake/mark_v_sdl_gl_debug_gcc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../Quake/" />
+				<Option object_output="./Object_Files/Debug_GCC_SDL_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters="-window -basedir /home/charles/Desktop/Quake -developer" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DGLQUAKE" />
+					<Add option="-DDEBUGGL" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_SDL" />
+				</Compiler>
+				<Linker>
+					<Add option="`sdl2-config --libs`" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="dl" />
+				</Linker>
+			</Target>
+			<Target title="Linux SDL GL Release">
+				<Option output="../../Quake/mark_v_sdl_gl_gcc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Object_Files/Release_GCC_SDL_GLQuake" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters="-window -basedir /home/charles/Desktop/Quake" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DGLQUAKE" />
+					<Add option="-DCORE_GL" />
+					<Add option="-DCORE_SDL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`sdl2-config --libs`" />
+					<Add library="libSDL2main" />
+					<Add library="libSDL2" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="dl" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="A) Windows All" targets="Win32 WinQuake Debug;Win32 WinQuake Release;Win32 WinQuake GL Debug;Win32 WinQuake GL Release;Win32 GL Debug;Win32 GL Release;Win32 SDL WinQuake GL Debug;Win32 SDL WinQuake GL Release;Win32 SDL GL Debug;Win32 SDL GL Release;" />
+			<Add alias="B) Linux All" targets="Linux SDL WinQuake GL Debug;Linux SDL WinQuake GL Release;Linux SDL GL Debug;Linux SDL GL Release;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-Winline" />
+			<Add option="-W" />
+			<Add option="-fexceptions" />
+			<Add option="-Wno-trigraphs" />
+			<Add option="-DQUAKE_GAME" />
+			<Add directory="../SDK" />
+			<Add directory="../SDK/Core" />
+			<Add directory="../SDK/dxsdk/sdk/inc" />
+		</Compiler>
+		<Linker>
+			<Add directory="../SDK" />
+			<Add directory="../SDK/Core" />
+		</Linker>
+		<Unit filename="../SDK/Core/base64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/base64.h" />
+		<Unit filename="../SDK/Core/clip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/clip.h" />
+		<Unit filename="../SDK/Core/color.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/color.h" />
+		<Unit filename="../SDK/Core/color_html_colors.enum.h" />
+		<Unit filename="../SDK/Core/core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/core.h" />
+		<Unit filename="../SDK/Core/core_net.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/core_net.h" />
+		<Unit filename="../SDK/Core/core_net_sys.h" />
+		<Unit filename="../SDK/Core/core_opengl.h" />
+		<Unit filename="../SDK/Core/core_osx.m" />
+		<Unit filename="../SDK/Core/core_sdl.h" />
+		<Unit filename="../SDK/Core/core_windows.h" />
+		<Unit filename="../SDK/Core/dirent_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/dirent_win.h" />
+		<Unit filename="../SDK/Core/download.h" />
+		<Unit filename="../SDK/Core/download_curl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/download_http.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/download_osx.m" />
+		<Unit filename="../SDK/Core/download_procs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/download_procs.h" />
+		<Unit filename="../SDK/Core/dx8_mh_gl_constants.h" />
+		<Unit filename="../SDK/Core/dx8_mh_wrapper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/dx8_mh_wrapper.h" />
+		<Unit filename="../SDK/Core/enumbits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/enumbits.h" />
+		<Unit filename="../SDK/Core/environment.h" />
+		<Unit filename="../SDK/Core/file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/file.h" />
+		<Unit filename="../SDK/Core/file_system.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/gl_constants.h" />
+		<Unit filename="../SDK/Core/html_colors.enum.h" />
+		<Unit filename="../SDK/Core/image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/image.h" />
+		<Unit filename="../SDK/Core/interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/interface.h" />
+		<Unit filename="../SDK/Core/libcurl.dll" />
+		<Unit filename="../SDK/Core/links.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/links.h" />
+		<Unit filename="../SDK/Core/lists.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/lists.h" />
+		<Unit filename="../SDK/Core/lodepng.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/lodepng.h" />
+		<Unit filename="../SDK/Core/math_general.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/math_general.h" />
+		<Unit filename="../SDK/Core/math_matrix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/math_matrix.h" />
+		<Unit filename="../SDK/Core/math_vector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/math_vector.h" />
+		<Unit filename="../SDK/Core/memchain.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/memchain.h" />
+		<Unit filename="../SDK/Core/memstick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/memstick.h" />
+		<Unit filename="../SDK/Core/miniz.h" />
+		<Unit filename="../SDK/Core/music.h" />
+		<Unit filename="../SDK/Core/music_cd_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/music_mp3_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/net_simple.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/net_simple.h" />
+		<Unit filename="../SDK/Core/pak.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/pak.h" />
+		<Unit filename="../SDK/Core/pthreads_core.h" />
+		<Unit filename="../SDK/Core/shell_android.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/shell_ios.m" />
+		<Unit filename="../SDK/Core/shell_linux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/shell_osx.m" />
+		<Unit filename="../SDK/Core/shell_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/stick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/stick.h" />
+		<Unit filename="../SDK/Core/stringlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/stringlib.h" />
+		<Unit filename="../SDK/Core/system.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/timelib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/timelib.h" />
+		<Unit filename="../SDK/Core/unzip_win.cpp" />
+		<Unit filename="../SDK/Core/unzip_win.h" />
+		<Unit filename="../SDK/Core/vid_osx_keys.h" />
+		<Unit filename="../SDK/Core/vidco.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/vidco.h" />
+		<Unit filename="../SDK/Core/vidco_console.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/vidco_ios.m" />
+		<Unit filename="../SDK/Core/vidco_osx.m" />
+		<Unit filename="../SDK/Core/vidco_sdl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/vidco_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/zip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Core/zip.h" />
+		<Unit filename="../SDK/Core/zip_win.cpp" />
+		<Unit filename="../SDK/Core/zip_win.h" />
+		<Unit filename="../SDK/Dzip/compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/conmain.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/crc32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/delete.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/dzip.dsp" />
+		<Unit filename="../SDK/Dzip/dzip.dsw" />
+		<Unit filename="../SDK/Dzip/dzip.h" />
+		<Unit filename="../SDK/Dzip/dzipcon.h" />
+		<Unit filename="../SDK/Dzip/encode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/mainx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/uncompress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/v1code.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/adler32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/deflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/deflate.h" />
+		<Unit filename="../SDK/Dzip/zlib/infblock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/infblock.h" />
+		<Unit filename="../SDK/Dzip/zlib/infcodes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/infcodes.h" />
+		<Unit filename="../SDK/Dzip/zlib/inffast.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/inffast.h" />
+		<Unit filename="../SDK/Dzip/zlib/inffixed.h" />
+		<Unit filename="../SDK/Dzip/zlib/inflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/inftrees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/inftrees.h" />
+		<Unit filename="../SDK/Dzip/zlib/infutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/infutil.h" />
+		<Unit filename="../SDK/Dzip/zlib/trees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/Dzip/zlib/trees.h" />
+		<Unit filename="../SDK/Dzip/zlib/zconf.h" />
+		<Unit filename="../SDK/Dzip/zlib/zlib.h" />
+		<Unit filename="../SDK/Dzip/zlib/zutil.h" />
+		<Unit filename="../SDK/HTTPClient/API/HTTPClient.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/HTTPClient/API/HTTPClient.h" />
+		<Unit filename="../SDK/HTTPClient/API/HTTPClientAuth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/HTTPClient/API/HTTPClientAuth.h" />
+		<Unit filename="../SDK/HTTPClient/API/HTTPClientCommon.h" />
+		<Unit filename="../SDK/HTTPClient/API/HTTPClientString.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/HTTPClient/API/HTTPClientString.h" />
+		<Unit filename="../SDK/HTTPClient/API/HTTPClientWrapper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/HTTPClient/API/HTTPClientWrapper.h" />
+		<Unit filename="../SDK/HTTPClient/HTTPClientSample.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../SDK/HTTPClient/HTTPClientSample.h" />
+		<Unit filename="../SDK/HTTPClient/Readme.txt" />
+		<Unit filename="../SDK/HTTPClient/httpdx.dsp" />
+		<Unit filename="QAboutPanel.m" />
+		<Unit filename="QApplication.m" />
+		<Unit filename="QController.m" />
+		<Unit filename="QSettingsPanel.m" />
+		<Unit filename="QSettingsWindow.m" />
+		<Unit filename="adivtab.h" />
+		<Unit filename="anorm_dots.h" />
+		<Unit filename="anorms.h" />
+		<Unit filename="arch_def.h" />
+		<Unit filename="asm_i386.h" />
+		<Unit filename="bspfile.h" />
+		<Unit filename="buffers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="buffers.h" />
+		<Unit filename="cd_osx.m" />
+		<Unit filename="cd_sdl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cd_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cdaudio.h" />
+		<Unit filename="chase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cl_demo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cl_input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cl_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cl_parse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cl_tent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="client.h" />
+		<Unit filename="cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmd.h" />
+		<Unit filename="cmd_list_sheet.h" />
+		<Unit filename="cmdline_list_sheet.h" />
+		<Unit filename="common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common.h" />
+		<Unit filename="console.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="console.h" />
+		<Unit filename="crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crc.h" />
+		<Unit filename="cvar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cvar.h" />
+		<Unit filename="cvar_list_sheet.h" />
+		<Unit filename="d_draw.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="d_draw16.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="d_edge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_fill.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_iface.h" />
+		<Unit filename="d_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_local.h" />
+		<Unit filename="d_modech.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_part.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_parta.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="d_polyse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_scan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_scana.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="d_sky.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_spr8.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="d_sprite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_surf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_vars.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d_varsa.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="d_zpoint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dedicated.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dedicated_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dedicated_win.h" />
+		<Unit filename="documentation.txt" />
+		<Unit filename="downloads.h" />
+		<Unit filename="downloads_osx.m" />
+		<Unit filename="draw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="draw.h" />
+		<Unit filename="dshow_mp3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dx8_mh_constants.h" />
+		<Unit filename="dx8_mh_wrapper.h" />
+		<Unit filename="gl_alias.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_bloom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_brush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_draw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_fog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_mesh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_renderer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_renderer.h" />
+		<Unit filename="gl_rmain.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_rmisc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_sky.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_sprite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_texmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_texmgr.h" />
+		<Unit filename="gl_warp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gl_warp_sin.h" />
+		<Unit filename="gl_world.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="glquake.h" />
+		<Unit filename="host.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="host_cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="in_osx.m" />
+		<Unit filename="in_sdl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="in_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="input.h" />
+		<Unit filename="keys.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="keys.h" />
+		<Unit filename="location.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="location.h" />
+		<Unit filename="main_central.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mark_v_glquake.ico" />
+		<Unit filename="mark_v_glquake.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="Win32 GL Release" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 SDL Release" />
+			<Option target="Win32 SDL Debug" />
+			<Option target="Win32 SDL GL Release" />
+		</Unit>
+		<Unit filename="mark_v_glquake2.ico" />
+		<Unit filename="mark_v_glquake_vs2008.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="Win32 SDL GL Debug" />
+		</Unit>
+		<Unit filename="mark_v_lmp.h" />
+		<Unit filename="mark_v_qmb.h" />
+		<Unit filename="mark_v_winquake.ico" />
+		<Unit filename="mark_v_winquake.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 WinQuake Debug" />
+			<Option target="Win32 WinQuake GL Debug" />
+			<Option target="Win32 SDL WinQuake GL Debug" />
+		</Unit>
+		<Unit filename="math.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menu.h" />
+		<Unit filename="model.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="model.h" />
+		<Unit filename="modelgen.h" />
+		<Unit filename="movie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="movie.h" />
+		<Unit filename="movie_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nehahra.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nehahra.h" />
+		<Unit filename="net.h" />
+		<Unit filename="net_admin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="net_bsd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="net_defs.h" />
+		<Unit filename="net_dgrm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="net_dgrm.h" />
+		<Unit filename="net_loop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="net_loop.h" />
+		<Unit filename="net_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="net_sys.h" />
+		<Unit filename="net_udp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pr_cmds.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pr_comp.h" />
+		<Unit filename="pr_edict.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pr_exec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="progdefs.h" />
+		<Unit filename="progdefs.q1" />
+		<Unit filename="progdefs.q2" />
+		<Unit filename="progs.h" />
+		<Unit filename="protocol.h" />
+		<Unit filename="q_image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="q_image.h" />
+		<Unit filename="q_lists.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="q_lists.h" />
+		<Unit filename="q_mathlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="q_mathlib.h" />
+		<Unit filename="q_music.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="q_music.h" />
+		<Unit filename="q_sound.h" />
+		<Unit filename="q_stdinc.h" />
+		<Unit filename="quakeasm.h" />
+		<Unit filename="quakedef.h" />
+		<Unit filename="r_aclip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_aclipa.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="r_alias.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_aliasa.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="r_bsp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_draw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_drawa.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="r_edge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_edgea.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="r_efrag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_light.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_local.h" />
+		<Unit filename="r_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_part.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_part_qmb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_shared.h" />
+		<Unit filename="r_sky.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_sprite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_surf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="r_varsa.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="recent_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="recent_file.h" />
+		<Unit filename="render.h" />
+		<Unit filename="resource.h" />
+		<Unit filename="sbar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sbar.h" />
+		<Unit filename="screen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="screen.h" />
+		<Unit filename="sdl_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sdlquake.h" />
+		<Unit filename="server.h" />
+		<Unit filename="snd_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="snd_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="snd_mix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="snd_osx.m" />
+		<Unit filename="snd_sdl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="snd_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sound.h" />
+		<Unit filename="spritegn.h" />
+		<Unit filename="surf16.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="surf8.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="sv_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sv_move.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sv_phys.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sv_user.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sys.h" />
+		<Unit filename="sys_osx.m" />
+		<Unit filename="sys_sdl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sys_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sys_wina.S">
+			<Option target="Win32 WinQuake Release" />
+			<Option target="Win32 WinQuake GL Release" />
+			<Option target="Win32 SDL WinQuake GL Release" />
+		</Unit>
+		<Unit filename="talk_macro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="talk_macro.h" />
+		<Unit filename="text_autocomplete.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="text_autocomplete.h" />
+		<Unit filename="text_edit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="text_edit.h" />
+		<Unit filename="text_history.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="text_history.h" />
+		<Unit filename="text_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="text_key.h" />
+		<Unit filename="text_undo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="text_undo.h" />
+		<Unit filename="todo.txt" />
+		<Unit filename="todo_done.txt" />
+		<Unit filename="tool_inspector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tool_inspector.h" />
+		<Unit filename="tool_texturepointer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tool_texturepointer.h" />
+		<Unit filename="utilities.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utilities.h" />
+		<Unit filename="utilities_install.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vid.h" />
+		<Unit filename="vid_osx.m" />
+		<Unit filename="vid_sdlgl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vid_sdlwin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vid_wgl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vid_wglext.h" />
+		<Unit filename="vid_wsoft.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vid_wsoftgl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="view.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="view.h" />
+		<Unit filename="wad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="wad.h" />
+		<Unit filename="winquake.h" />
+		<Unit filename="world.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="world.h" />
+		<Unit filename="wsaerror.h" />
+		<Unit filename="zone.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="zone.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

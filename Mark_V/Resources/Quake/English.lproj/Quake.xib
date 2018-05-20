@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1070" defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="QApplication">
+            <connections>
+                <outlet property="delegate" destination="218" id="219"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <menu title="GLQuake" systemMenu="main" id="29" userLabel="MainMenu">
+            <items>
+                <menuItem title="Quake" id="56">
+                    <menu key="submenu" title="Quake" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About Quake" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="xsb-K6-iLx">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Startup Dialog" state="on" id="ijw-RF-CUT">
+                                <connections>
+                                    <action selector="cmdDialogAtStartup:" target="218" id="9Ux-g3-cO3"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide Quake" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="cmdHideWinow:" target="218" id="6ZL-bH-a4D"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" id="145">
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-2" id="146"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-2" id="153"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit Quake" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-2" id="272"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="19">
+                    <menu key="submenu" title="Edit" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Copy Screenshot" id="23">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cmdCopyScreenshot:" target="218" id="l2e-1z-Ly9"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Copy Console Output" id="MlM-th-0t2">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cmdCopyConsole:" target="218" id="fbM-Fa-hYs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy Map Entities" id="4qw-B8-kbp">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cmdCopyEnts:" target="218" id="8tC-ea-NzS"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="YUm-m1-hLw">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Open Quake Folder" id="n1O-ah-AAv">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cmdOpenFolder:" target="218" id="fH9-0v-hYu"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Utilities" id="d5U-re-vpx">
+                    <menu key="submenu" title="Utilities" systemMenu="window" id="vY6-QP-7H1">
+                        <items>
+                            <menuItem title="Make a Pak File ..." id="5Aq-dN-0Rn">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cmdPakFileMake:" target="218" id="14f-W0-g83"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Unpack a Pak File ..." id="oxa-9H-z9q">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cmdPakFileUnpack:" target="218" id="Gfb-Xa-fuK"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="List Pak Contents ..." id="lQc-H3-y9H">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cmdPakFileList:" target="218" id="kua-ce-SEN"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="V5P-Lr-Y6T">
+                    <menu key="submenu" title="Window" systemMenu="window" id="80U-38-Jkc">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="SZH-kM-3xh">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="3YC-Qo-iyG"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="GDJ-Zd-g8A">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bring All to Front" id="CWJ-Ov-5ME">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39h-Jg-JUK"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="103">
+                    <menu key="submenu" title="Help" id="106">
+                        <items>
+                            <menuItem title="Visit Mark V Home Page" id="270">
+                                <connections>
+                                    <action selector="visitFOD:" target="218" id="271"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="218" userLabel="QController" customClass="QController">
+            <connections>
+                <outlet property="mCopyConsole" destination="MlM-th-0t2" id="7XI-st-IaR"/>
+                <outlet property="mCopyEnts" destination="4qw-B8-kbp" id="qS2-mU-V76"/>
+                <outlet property="mCopyScreenshot" destination="23" id="P2k-sz-wu0"/>
+                <outlet property="mShowCommandLineAtStartup" destination="ijw-RF-CUT" id="tCE-xG-HVD"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

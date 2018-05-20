@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mark V", "Mark_V_Visual_Studio_2008.vcproj", "{64326BEE-C576-46E6-BF4C-E84616E75A20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64326BEE-C576-46E6-BF4C-E84616E75A20}.Release|Win32.ActiveCfg = Release|Win32
+		{64326BEE-C576-46E6-BF4C-E84616E75A20}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Quake";
+CFBundleShortVersionString = "0.99";
+CFBundleGetInfoString = "Mark V version 0.99.";
+NSHumanReadableCopyright = "Project by Baker.";

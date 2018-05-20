@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>GLQuake</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Mark V 0.99</string>
+	<key>CFBundleIconFile</key>
+	<string>mark_v</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.quakeone.mark-v</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>GLQuake</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.action-games</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.8.0</string>
+	<key>NSAppleScriptEnabled</key>
+	<false/>
+	<key>NSMainNibFile</key>
+	<string>Quake</string>
+	<key>NSPrincipalClass</key>
+	<string>QApplication</string>
+</dict>
+</plist>

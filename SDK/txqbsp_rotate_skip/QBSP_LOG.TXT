@@ -1,0 +1,48 @@
+TxQBSP 1.13 -- Modified by Bengt Jardrup
+
+TxQBSP performs geometric level processing of Quake .MAP files to create
+Quake .BSP files.
+
+txqbsp [options] sourcefile [destfile]
+
+Options:
+   -notjunc        Disable tjunc calculations
+   -nofill         Disable outside filling
+   -nofillclip     Disable outside filling in hull 1
+   -nofillvis      Disable outside filling in hull 0
+   -fill           Force outside filling in hulls 1/2 if they leak
+   -hilimit        Enable extreme capacity
+   -noskip         Disable skip tool
+   -hiprotate      Use old (Hipnotic) rotation
+   -onlyents       Only update .MAP entities
+   -noents         Remove all entities except world and players
+   -verbose        Print out more .MAP information
+   -verbosemem     Print out more memory information
+   -verbosetex     Print out more texture information
+   -noverbose      Print out almost no information at all
+   -nowarnings     Disable warning printouts
+   -quiet          Short for noverbose, nowarnings and nopercent
+   -nowatervis     Disable portal information for transparent water
+   -solid          Remove liquids and treat sky as solid
+   -q2map          Enable Q2 style map format
+   -group          Enable func_group parsing
+   -oldprint       Print hull 1 information instead of hull 0
+   -oldleak        Create an old-style QBSP .PTS file
+   -nosortface     Disable face sorting before processing
+   -oldcsg         Disable new CSG processing method
+   -oldexpand      Disable new brush expansion method
+   -altaxis        Enable alternate texture axis handling
+   -nopercent      Disable percent completion information
+   -percent        Enable percent completion information
+   -numpercent     Numerical percent completion information
+   -leak [n]       Hull # to generate leakfile for (default -1 = any)
+   -leakdist [n]   Distance between leakfile points (default 4)
+   -simpdist [n]   Simplification distance in leakfile (default 100)
+   -hull [n]       Hull # to make visible (default 0)
+   -starthull [n]  Hull # to start processing with (default 0)
+   -expand [n]     Hull expansion (default 0.0)
+   -epsilon [n]    Plane comparison, use 0.05 for old-style (default 0.01)
+   -subdivide [n]  Use different texture subdivision (default 240)
+   -priority [n]   Set thread priority 0-2 (below/normal/above, default 1)
+   sourcefile      .MAP file to process
+   destfile        .BSP file to output

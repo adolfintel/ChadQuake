@@ -1,0 +1,27 @@
+# Makefile for Solaris
+
+CC = gcc
+CFLAGS = -Wall -O3 -DBIG_ENDIAN
+TARGET = dzip
+OBJECTS = main.o compress.o uncompress.o list.o crc32.o \
+	  encode.o decode.o v1code.o conmain.o delete.o \
+	  zlib/adler32.o zlib/deflate.o zlib/trees.o \
+	  zlib/inflate.o zlib/infblock.o zlib/inftrees.o zlib/infcodes.o \
+	  zlib/infutil.o zlib/inffast.o
+
+TMPFILES = gmon.out frag*
+
+$(TARGET): $(OBJECTS)
+	$(CC) $(CFLAGS) $(OBJECTS) -o $(TARGET) $(LDFLAGS)
+
+clean:
+	rm -f $(TARGET) $(OBJECTS) $(TMPFILES)
+
+main.o: main.c dzip.h
+compress.o: compress.c dzip.h dzipcon.h
+uncompress.o: uncompress.c dzip.h dzipcon.h
+crc32.o: crc32.c
+encode.o: encode.c dzip.h
+list.o: list.c dzip.h dzipcon.h
+decode.o: decode.c dzip.h dzipcon.h
+v1code.o: v1code.c dzip.h dzipcon.h

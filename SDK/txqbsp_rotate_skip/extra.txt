@@ -1,0 +1,13 @@
+bspinfo.c
+lbmlib.c
+polylib.c
+scriplib.c
+threads.c
+trilib.c
+wadlib.c
+lbmlib.h
+polylib.h
+scriplib.h
+threads.h
+trilib.h
+wadlib.h

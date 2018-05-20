@@ -1,0 +1,25 @@
+#include <windows.h> // include for version info constants
+
+1 ICON DISCARDABLE "mark_v_glquake2.ico"
+
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040904E4"
+		 {
+			 VALUE "CompanyName", "Quake"			 
+			VALUE "FileVersion", "1.09"
+			 VALUE "FileDescription", "Quake"
+			 VALUE "InternalName", "Quake"
+			 VALUE "LegalCopyright", "id Software"
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", "Quake.exe"
+			 VALUE "ProductName", "Quake"
+			 VALUE "ProductVersion", "1.09"
+		 }
+	 }
+}
