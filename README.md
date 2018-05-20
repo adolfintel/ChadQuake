@@ -16,7 +16,7 @@ All the customization is hidden so that it can only be accessed by mods or the c
 It's 2018, Chad doesn't have a CD drive, why even support it? Music is only read from MP3 files instead.
 
 ### Windows only
-Because it's the best and chaddest operating system. Unix supremacist can go eat a shambler's ass.  
+Because it's the best and chaddest operating system. Unix supremacists can go eat a shambler's ass.  
 Code for other versions is still there, but it's untested and the build config has been removed.
 
 ### No level selection menu
@@ -42,7 +42,7 @@ It works the same as Mark V:
 All command line options are the same as the Mark V.
 
 ## Building
-ChadQuake, like Mark V can be build on Visual Studio 2008 SP1. Load the project and press Build. All dependencies are included.
+ChadQuake, like Mark V, can be built on Visual Studio 2008 SP1. Load the project and press Build. All dependencies are included.
 
 ## Credits
 Baker: for making Mark V, the best and most badass Quake source port out there.
