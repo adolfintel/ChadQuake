@@ -291,7 +291,7 @@ cbool VID_Local_SetMode (int modenum)
 		#define SDL_WINDOWED_MODE_0 0
 		if (SDL_SetWindowFullscreen (sysplat.mainwindow, SDL_WINDOWED_MODE_0) != 0)
 			System_Error ("Couldn't set fullscreen");
-	}
+	}else{
 
 	// Quakespasm now sizes the window
 	SDL_SetWindowSize (sysplat.mainwindow, p->width, p->height);
@@ -303,7 +303,6 @@ cbool VID_Local_SetMode (int modenum)
 		if (SDL_SetWindowFullscreen (sysplat.mainwindow, SDL_WINDOW_FULLSCREEN_DESKTOP) != 0)
 			System_Error ("Couldn't set fullscreen state mode");
 	}
-
 	Shell_Platform_Icon_Window_Set (sysplat.mainwindow);
 	SDL_SetWindowMinimumSize (sysplat.mainwindow, QWIDTH_MINIMUM_320, QHEIGHT_MINIMUM_2XX);
 	SDL_ShowWindow (sysplat.mainwindow);

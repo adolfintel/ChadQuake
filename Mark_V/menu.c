@@ -550,7 +550,7 @@ void M_Demos_Key (int key)
 		{
 			if (!strcmp(m_demos_list[demos_cursor].age, "pak"))
 			{
-				SCR_ModalMessage ("Can't explore to demo." NEWLINE NEWLINE "It is in a pak file!", 0, true);
+			    SCR_ModalMessage ("Can't explore to demo." NEWLINE NEWLINE "It is in a pak file!", 0, true);
 				break;
 			}
 
@@ -563,7 +563,9 @@ void M_Demos_Key (int key)
 					c_strlcat (filebuf, ".dem");
 
 				Folder_Open_Highlight (filebuf);
-			} else SCR_ModalMessage ("Can't explore to file" NEWLINE "in full-screen mode." NEWLINE "ALT-ENTER toggles full-screen" NEWLINE "and windowed mode.", 0, true);
+			} else {
+			    SCR_ModalMessage ("Can't explore to file" NEWLINE "in full-screen mode." NEWLINE "ALT-ENTER toggles full-screen" NEWLINE "and windowed mode.", 0, true);
+            }
 		}
 		break;
 
@@ -2183,7 +2185,7 @@ void M_Menu_Options_f (void)
 	m_entersound = true;
 }
 
-void M_AdjustSliders (int options_cursor, int dir)
+void M_AdjustSliders (int options_cursor, float dir) //fdossena: replaced int dir with float dir to allow for finer control on the sliders
 {
 	const moptions_t* myopt = &menu_options_draw[options_cursor];
 	S_LocalSound ("misc/menu3.wav");
@@ -2352,7 +2354,6 @@ void M_Options_Key (int k)
 		case opt_reset_02:
 			if (!SCR_ModalMessage("Are you sure you want to reset" NEWLINE "all keys and settings?", 0, false))
 					break;
-
 			Cbuf_AddTextLine ("resetall"); //johnfitz
 			Cbuf_AddTextLine ("exec default.cfg");
 			break;
@@ -2383,11 +2384,11 @@ void M_Options_Key (int k)
 		break;
 
 	case K_LEFTARROW:
-		M_AdjustSliders (key_action_cursor, -1);
+		M_AdjustSliders (key_action_cursor, -0.5);
 		break;
 
 	case K_RIGHTARROW:
-		M_AdjustSliders (key_action_cursor, 1);
+		M_AdjustSliders (key_action_cursor, 0.5);
 		break;
 	}
 
@@ -4527,7 +4528,7 @@ void M_Video_Key (int key)
 //#define TEXMODE_GL_NEAREST_MIPMAP_NEAREST_1			1
 //#define TEXMODE_GL_NEAREST_MIPMAP_LINEAR_2			2
 //#define TEXMODE_GL_LINEAR_MIPMAP_LINEAR_5			5
-		case VID_OPT_TEXTUREFILTER: // 0 (default "5"), 1 - pixelated (default), 2 - 
+		case VID_OPT_TEXTUREFILTER: // 0 (default "5"), 1 - pixelated (default), 2 -
 			switch (glmode_idx) { // Left 0, 5, 1
 			default:
 			case TEXMODE_GL_LINEAR_MIPMAP_LINEAR_5:		Cvar_SetQuick (&gl_texturemode, "GL_NEAREST");					break;
@@ -4538,7 +4539,7 @@ void M_Video_Key (int key)
 
 #endif //WINQUAKE_RENDERER_SUPPORT
 
-	
+
 
 		default:
 			break;
@@ -4599,7 +4600,7 @@ void M_Video_Key (int key)
 #else
 		case VID_OPT_HWGAMMA:
 			break;
-		
+
 		case VID_OPT_TEXTUREFILTER:
 			break;
 
@@ -4651,12 +4652,12 @@ void M_Video_Draw (void)
 	i++;
 
 #ifdef WINQUAKE_RENDERER_SUPPORT
-	M_Print (16, video_cursor_table[i], "           Stretch");
+	M_Print (16, video_cursor_table[i], "     Integer scale");
 	#ifdef CORE_GL
 		// WinQuake GL -- keep users out of trouble
-		M_Print (184, video_cursor_table[i], (vid_sw_stretch.value >= 2) ? "320x240 nearest" : (vid_sw_stretch.value >= 1) ? "640x480 nearest" : "None (n/a WinQuake GL)");
+		M_Print (184, video_cursor_table[i], (vid_sw_stretch.value >= 2) ? "320x240 nearest" : (vid_sw_stretch.value >= 1) ? "640x480 nearest" : "Auto");
 	#else
-		M_Print (184, video_cursor_table[i], (vid_sw_stretch.value >= 2) ? "320x240 nearest" : (vid_sw_stretch.value >= 1) ? "640x480 nearest" : "None");
+		M_Print (184, video_cursor_table[i], (vid_sw_stretch.value >= 2) ? "320x240 nearest" : (vid_sw_stretch.value >= 1) ? "640x480 nearest" : "Auto");
 	#endif
 	i++;
 #endif // !WINQUAKE_RENDERER_SUPPORT
@@ -4674,15 +4675,15 @@ void M_Video_Draw (void)
 
 	M_Print (16, video_cursor_table[i], "        Pixelation");
 	M_Print (184, video_cursor_table[i],	glmode_idx == TEXMODE_GL_LINEAR_MIPMAP_LINEAR_5 ? "Smooth (Default)" :
-						glmode_idx == TEXMODE_GL_NEAREST_MIPMAP_NEAREST_1 ? "Pixelated" : "Pixelated/Rough" /* TEXMODE_GL_NEAREST_0*/				
+						glmode_idx == TEXMODE_GL_NEAREST_MIPMAP_NEAREST_1 ? "Pixelated" : "Pixelated/Rough" /* TEXMODE_GL_NEAREST_0*/
 		);
-	
+
 
 	if (video_options_cursor == VID_OPT_TEXTUREFILTER) {
-		M_PrintWhite (16, video_cursor_table[i] + 24,  
-			glmode_idx == TEXMODE_GL_LINEAR_MIPMAP_LINEAR_5 ?   "     Filter: GL_LINEAR_MIPMAP_LINEAR" : 
-			glmode_idx == TEXMODE_GL_NEAREST_MIPMAP_NEAREST_1 ? "     Filter: GL_NEAREST_MIPMAP_NEAREST" : 
-			glmode_idx == TEXMODE_GL_NEAREST_0				  ? "     Filter: GL_NEAREST" : 
+		M_PrintWhite (16, video_cursor_table[i] + 24,
+			glmode_idx == TEXMODE_GL_LINEAR_MIPMAP_LINEAR_5 ?   "     Filter: GL_LINEAR_MIPMAP_LINEAR" :
+			glmode_idx == TEXMODE_GL_NEAREST_MIPMAP_NEAREST_1 ? "     Filter: GL_NEAREST_MIPMAP_NEAREST" :
+			glmode_idx == TEXMODE_GL_NEAREST_0				  ? "     Filter: GL_NEAREST" :
 																"     Filter: (other)"
 		);
 	}

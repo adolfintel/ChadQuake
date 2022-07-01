@@ -199,7 +199,7 @@ void Input_Think (void)
 {
 	input_state_t	newstate = (inps.initialized && vid.ActiveApp && !vid.Minimized && !vid.Hidden) ? input_have_keyboard : input_none;
 	cbool		windowed_mouse_grab = !cl.paused && !console1.forcedup && ( key_dest == key_game  || key_dest == key_message || (key_dest == key_menu && m_keys_bind_grab));
-	cbool		mouse_grab = (vid.screen.type == MODE_FULLSCREEN || windowed_mouse_grab);
+	cbool		mouse_grab = true;//(vid.screen.type == MODE_FULLSCREEN || windowed_mouse_grab); //fdossena: always grab mouse because fuck modern menus
 
 	cbool		disable_windows_key = input_have_keyboard && vid.screen.type == MODE_FULLSCREEN;
 //	cbool		can_mouse_track = inps.initialized && !vid.Minimized && !vid.Hidden) && dont have mouse
@@ -367,6 +367,10 @@ void Input_Mouse_Accumulate (void)
 			}
 		}
 
+		if(key_dest == key_menu){ //fdossena: ignore mouse movement in menus
+            nuke_mouse_accum = true;
+		}
+
 #ifdef INPUT_RELATIVE
 		inps.mouse_accum_x += input_accum_x; input_accum_x = 0;
 		inps.mouse_accum_y += input_accum_y; input_accum_y = 0;
@@ -388,7 +392,8 @@ void Input_Mouse_Accumulate (void)
 
 void Input_Mouse_Move (usercmd_t *cmd)
 {
-	Input_Mouse_Accumulate ();
+
+    Input_Mouse_Accumulate ();
 
 	if (inps.mouse_accum_x || inps.mouse_accum_y)
 	{

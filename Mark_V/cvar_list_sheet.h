@@ -218,6 +218,7 @@ CVAR_DEF( R_Init      , SCENE     ,  DEP_SW   , sw_r_reportedgeout        , "r_r
 CVAR_DEF( R_Init      , SCENE     ,  DEP_SW   , sw_r_reportsurfout        , "r_reportsurfout"         , "0"       , CVAR_NONE         , NULL                 ,  "Toggle display of the number of surfaces which would be rendered outside of the map."            )
 CVAR_DEF( R_Init      , SCENE     ,  DEP_SW   , sw_r_timegraph            , "r_timegraph"             , "0"       , CVAR_NONE         , NULL                 ,  "Toggle display of a graph which shows the performance of the renderer in graphical format."            )
 CVAR_DEF( D_Init      , SCENE     ,  DEP_SW   , sw_d_mipcap               , "d_mipcap"                , "0"       , CVAR_NONE         , NULL                 ,  "Level of detail for rendering textures on the map."            )
+CVAR_DEF( D_Init      , SCENE     ,  DEP_SW   , sw_r_limitspeed           , "r_limitspeed"            , "0"       , CVAR_ARCHIVE      , NULL                 ,  "Slows down rendering to simulate the speed of an older PC"            )
 
 
 CVAR_DEF( SCR_Init    , SCREEN    ,  DEP_GL   , gl_conalpha               , "scr_conalpha"            , "1"       , CVAR_ARCHIVE      , NULL                 ,  "Opacity when the console is halfscreen. Default 1. Set to 0.6 to mimic GLQuake."            ) //johnfitz
@@ -385,11 +386,17 @@ CVAR_DEF( VID_Init    , VIDEO     ,  DEP_GL   , vid_hardwaregamma         , "vid
 CVAR_DEF( VID_Init    , VIDEO     ,  DEP_GL   , vid_multisample           , "vid_multisample"         , "0"       , CVAR_ARCHIVE      , VID_Local_Multisample_f,  "Enables costly edge smoothing (values: 0, 2, 4, 8)"          )
 CVAR_DEF( VID_Init    , VIDEO     ,  DEP_NONE , vid_contrast              , "contrast"                , "1"       , CVAR_ARCHIVE      , NULL                 ,  "Screen contrast correction level."            )
 CVAR_DEF( VID_Init    , VIDEO     ,  DEP_NONE , vid_fullscreen            , "vid_fullscreen"          , "1"       , CVAR_ARCHIVE      , NULL                 ,  "Set fullscreen preference. Requires vid_restart."            )
+#ifdef PLATFORM_LINUX //fdossena: on linux, it's better to avoid resolution changes because some WMs don't play nicely so we use the desktop resolution by default and enable 640x480 integer scaling
+CVAR_DEF( VID_Init    , VIDEO     ,  DEP_SW   , vid_sw_stretch            , "vid_stretch"             , "1"       , CVAR_ARCHIVE      , NULL                 ,  "Stretch simulates lower resoluton (2: 320 x 240 1:640 x 480 0: off) as close as possible.  Requires vid_restart. Provide lower resolution appearance on displays without low resolution modes available."            )
+CVAR_DEF( VID_Init    , VIDEO     ,  DEP_NONE , vid_height                , "vid_height"              , "-1"     , CVAR_ARCHIVE      , NULL                 ,  "Requested video mode height."            )
+CVAR_DEF( VID_Init    , VIDEO     ,  DEP_NONE , vid_width                 , "vid_width"               , "-1"     , CVAR_ARCHIVE      , NULL                 ,  "Requested video mode width."            )
+#else
 CVAR_DEF( VID_Init    , VIDEO     ,  DEP_SW   , vid_sw_stretch            , "vid_stretch"             , "0"       , CVAR_ARCHIVE      , NULL                 ,  "Stretch simulates lower resoluton (2: 320 x 240 1:640 x 480 0: off) as close as possible.  Requires vid_restart. Provide lower resolution appearance on displays without low resolution modes available."            )
-CVAR_DEF( VID_Init    , VIDEO     ,  DEP_NONE , vid_height                , "vid_height"              , "480"     , CVAR_ARCHIVE      , NULL                 ,  "Requested video mode height."            )
+CVAR_DEF( VID_Init    , VIDEO     ,  DEP_NONE , vid_height                , "vid_height"              , "640"     , CVAR_ARCHIVE      , NULL                 ,  "Requested video mode height."            )
+CVAR_DEF( VID_Init    , VIDEO     ,  DEP_NONE , vid_width                 , "vid_width"               , "480"     , CVAR_ARCHIVE      , NULL                 ,  "Requested video mode width."            )
+#endif
 CVAR_DEF( VID_Init    , VIDEO     ,  DEP_FREQ , vid_refreshrate           , "vid_refreshrate"         , "60"      , CVAR_ARCHIVE      , NULL                 ,  "Requested video mode refresh rate. (TODO: This isn't used.  Remove?)"            )
 CVAR_DEF( VID_Init    , VIDEO     ,  DEP_VSYNC, vid_vsync                 , "vid_vsync"              , "1"       , CVAR_ARCHIVE      , VID_Local_Vsync_f   ,  "Toggle use of vsync to eliminate tearing."            )
-CVAR_DEF( VID_Init    , VIDEO     ,  DEP_NONE , vid_width                 , "vid_width"               , "640"     , CVAR_ARCHIVE      , NULL                 ,  "Requested video mode width."            )
 CVAR_DEF( VID_Init    , VIDEO     ,  DEP_NONE , vid_sound_thread		  , "vid_sound_thread"        , "1"       , CVAR_ARCHIVE      , NULL                 ,  "(TODO: Unused)"            )
 CVAR_DEF( Chase_Init  , VIEW      ,  DEP_NONE , chase_active              , "chase_active"            , "0"       , CVAR_NONE         , NULL                 ,  "Toggle the use of a chase camera."            )
 CVAR_DEF( Chase_Init  , VIEW      ,  DEP_NONE , chase_back                , "chase_back"              , "100"     , CVAR_NONE         , NULL                 ,  "Distance chase camera behind the player."            )

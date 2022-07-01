@@ -131,8 +131,8 @@ void D_DrawTurbulent8SpanAlpha (void)
 		{
 			sturb = ((r_turb_s + r_turb_turb[(r_turb_t>>16)&(CYCLE-1)])>>16)&63;
 			tturb = ((r_turb_t + r_turb_turb[(r_turb_s>>16)&(CYCLE-1)])>>16)&63;
-			
-			temp = *(r_turb_pbase + (tturb<<6) + sturb);							
+
+			temp = *(r_turb_pbase + (tturb<<6) + sturb);
 			temp2 = ((int)r_turb_pdest & 3);
 			if (temp2 == 0 || temp2 == 2) // Baker's easy stipple method
 				*r_turb_pdest = *(r_turb_pbase + (tturb<<6) + sturb);
@@ -285,9 +285,9 @@ void Turbulent8 (espan_t *pspan)
 	//			if (liquid_alpha < 1)
 					D_DrawTurbulent8SpanAlpha ();
 			}
-			else 
+			else
 				D_DrawTurbulent8Span ();
-			
+
 			r_turb_s = snext;
 			r_turb_t = tnext;
 
@@ -561,15 +561,15 @@ void D_DrawSpans8_Fence (espan_t *pspan)
 			{
 				// This is doing *pdest = something, then ++ is moving it forward
 	//			*pdest++ = *(pbase + (s >> 16) + (t >> 16) * cachewidth);
-// new		
+// new
 				fencepix = *(pbase + (s >> 16) + (t >> 16) * cachewidth);
-            	if (*pz  <= (izi >> 16) && fencepix != 255) { 
-					*pdest = fencepix; 
+            	if (*pz  <= (izi >> 16) && fencepix != 255) {
+					*pdest = fencepix;
 					*pz = (izi >> 16);
 				}
 				pdest ++;
 				pz ++;
-            	izi += izistep; 
+            	izi += izistep;
 				s += sstep;
 				t += tstep;
 			} while (--spancount > 0);

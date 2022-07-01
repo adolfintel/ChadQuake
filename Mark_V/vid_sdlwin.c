@@ -274,13 +274,13 @@ cbool VID_Local_SetMode (int modenum)
 	int vid_sdl_flags = SDL_WINDOW_OPENGL | SDL_WINDOW_HIDDEN;
 //	if (p->type == MODE_FULLSCREEN) vid_sdl_flags |= SDL_WINDOW_FULLSCREEN;
 	if (p->type == MODE_FULLSCREEN) {
-            vid_sdl_flags |= SDL_WINDOW_FULLSCREEN_DESKTOP;
-        p = &vid.desktop;
+            vid_sdl_flags |= SDL_WINDOW_FULLSCREEN; //fdossena: exclusive fullscreen
+        //p = &vid.desktop; //fdossena: exclusive fullscreen
 	}
 
 
 // Baker: begin resize window on the fly
-	if (p->type == MODE_WINDOWED)   vid_sdl_flags |= SDL_WINDOW_RESIZABLE;
+	//if (p->type == MODE_WINDOWED)   vid_sdl_flags |= SDL_WINDOW_RESIZABLE; //fdossena: how about no since it crashes quite often?
 
 // End resize window on the fly
 
@@ -357,7 +357,7 @@ if (p->type == MODE_WINDOWED) {
     sysplat.mainwindow = SDL_CreateWindow(ENGINE_NAME,
 			0, 0,
 			p->width, p->height,
-			vid_sdl_flags | SDL_WINDOW_FULLSCREEN_DESKTOP);
+			vid_sdl_flags | SDL_WINDOW_FULLSCREEN); //fdossena: exclusive fullscreen
 
 }
 
@@ -545,8 +545,10 @@ cbool SDL_SetupPixelFormat (void)
     return true;
 }
 
+#ifdef _MSC_VER //fdossena: the following shit should only be active on MSVC, also the tiny ass static buffer declared below causes crashes at higher resolutions
 #define MSVC_IS_BEING_DUMB // and giving me heap corruption but GCC isn't.  And I think if I tack on "CORE_GL" to WinQuake debug it is ok too ... dumb
 							// Will we eventually discover it's something else?  Project setting or something?  Who knows!
+#endif
 
 #ifdef MSVC_IS_BEING_DUMB
 static pixel_t /*byte*/ my_static_buffero[1024][512]; // Legal?
@@ -597,6 +599,7 @@ cbool VID_CreateDIB (int newwidth, int newheight, byte *palette)
 	vid.wingl.numpels		= vid.wingl.width_pow2 * vid.wingl.height_pow2; // 1024 x 512
 
 	vid.wingl.rgbabuffer	= calloc (vid.wingl.numpels, sizeof(unsigned));
+
 #ifdef MSVC_IS_BEING_DUMB // Static buffer
 	vid.wingl.pixelbytes	= vid.buffer = my_static_buffero;
 #else
@@ -631,14 +634,12 @@ cbool VID_CreateDIB (int newwidth, int newheight, byte *palette)
     eglTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     eglTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 
-    //glGetError();
 #if 0
 	eglTexImage2D (GL_PROXY_TEXTURE_2D, /* mip level */ 0, GL_COLOR_INDEX8_EXT, vid.wingl.width_pow2, vid.wingl.height_pow2, /* border */ 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
 #else
     eglTexImage2D (GL_PROXY_TEXTURE_2D, /* mip level */ 0, GL_RGBA, vid.wingl.width_pow2, vid.wingl.height_pow2, /* border */ 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
 #endif
 
-    //error = glGetError();
 	{	int actualTexWidth = -1, actualTexHeight = -1;
 		glGetTexLevelParameteriv (GL_PROXY_TEXTURE_2D, 0, GL_TEXTURE_WIDTH, &actualTexWidth);
 		glGetTexLevelParameteriv (GL_PROXY_TEXTURE_2D, 0, GL_TEXTURE_HEIGHT, &actualTexHeight);
@@ -699,8 +700,10 @@ static void VID_WinQuake_AdjustBuffers (vmode_t *p)
 
 	// Find best integral factor, set both the x and the y.  This wants to be 1.  But a giant mode like 6000 x 2000 would generate 2.
 
-	for (vid.stretch_x = 1; p->width  / vid.stretch_x > WINQUAKE_MAX_WIDTH_3000 ; vid.stretch_x ++);
-	for (vid.stretch_y = 1; p->height / vid.stretch_y > WINQUAKE_MAX_HEIGHT_1080; vid.stretch_y ++);
+	//fdossena: chadquake limits resolution to 1280x1024 but allows you to select higher resolutions to keep the image nice and crisp, we limit this here
+
+	for (vid.stretch_x = 1; p->width  / vid.stretch_x > 1280/*WINQUAKE_MAX_WIDTH_3000*/ ; vid.stretch_x ++);
+	for (vid.stretch_y = 1; p->height / vid.stretch_y > 1024/*WINQUAKE_MAX_HEIGHT_1080*/; vid.stretch_y ++);
 
 	vid.stretch_old_cvar_val = (int)vid_sw_stretch.value; // This isn't the actual stretch, but the cvar value attempted.
 	// Ok we need to validate this.
@@ -713,11 +716,7 @@ static void VID_WinQuake_AdjustBuffers (vmode_t *p)
 		int high_any = c_min (high_x, high_y);
 
 		//int stretch_try = vid.stretch_old_cvar_val;
-#if 1 // WINQUAKE-GL EXCEPTION since it is so fucking slow ...
-		int stretch_try = CLAMP(1, vid.stretch_old_cvar_val, 2);
-#else
 		int stretch_try = CLAMP(0, vid.stretch_old_cvar_val, 2);
-#endif
 
 		switch (stretch_try) {
 		case 0:	stretch_try = 1; break;

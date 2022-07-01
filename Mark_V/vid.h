@@ -58,8 +58,8 @@ enum {TEARDOWN_NO_DELETE_GL_CONTEXT_0 = 0, TEARDOWN_FULL_1 = 1};
 enum {USER_SETTING_FAVORITE_MODE = 0, ALT_ENTER_TEMPMODE = 1};
 
 #define MAX_MODE_LIST				600
-#define MAX_MODE_WIDTH_10000		1280
-#define MAX_MODE_HEIGHT_10000		1024
+#define MAX_MODE_WIDTH_10000		10000
+#define MAX_MODE_HEIGHT_10000		10000
 #define MIN_MODE_WIDTH_640			640
 #define MIN_MODE_HEIGHT_400			400
 
@@ -88,7 +88,7 @@ typedef struct
 #define VID_MAX_POSSIBLE_GAMMA 4.0
 
 #define VID_MIN_MENU_GAMMA 0.5
-#define VID_MAX_MENU_GAMMA 1.0
+#define VID_MAX_MENU_GAMMA 1.25 //fdossena: allow gamma to go a bit below the minimum
 
 
 typedef struct mrect_s

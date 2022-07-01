@@ -24,6 +24,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include "quakedef.h" // Baker: mods = none really, just boilerplate for MH model interpolation but just the function call, not the meat (like the actual code is in a different file)
 
+#ifdef _MSC_VER
+#include<windows.h>
+#endif // _MSC_VER
 
 //define	PASSAGES
 
@@ -409,7 +412,7 @@ void R_MarkLeaves (void)
 		vis = Mod_LeafPVS (cl.r_viewleaf, cl.worldmodel);
 	}
 
-	if (!frame.nearwaterportal && !level.ever_been_away_from_water_portal) 
+	if (!frame.nearwaterportal && !level.ever_been_away_from_water_portal)
 		level.ever_been_away_from_water_portal = true;
 
 	if (frame.nearwaterportal && !level.water_vis_known)
@@ -485,7 +488,7 @@ void R_DrawEntitiesOnList (void)
 #if 1 // Baker: Rare.  Need to investigate relink entities and Nehahra support.  E1M5 occasional intermission crash due to player.mdl not being resolved.  MODEL_CRUTCH
 		if (currententity->model == NULL && currententity->modelindex)
 			currententity->model = cl.model_precache[currententity->baseline.modelindex];
-#endif 		
+#endif
 
 		switch (currententity->model->type)
 		{
@@ -599,7 +602,7 @@ void R_DrawViewModel (void)
 			return;
 
 		 currententity->alpha = ENTALPHA_ENCODE(WEAPON_INVISIBILITY_ALPHA);
-	} 
+	}
 	else currententity->alpha = cl_entities[cl.viewentity_player].alpha; // If player is invisible so is his gun
 
 	VectorCopy (currententity->origin, r_entorigin);
@@ -732,7 +735,7 @@ void R_DrawBEntitiesOnList (void)
 #if 1 // Baker: Rare.  Need to investigate relink entities and Nehahra support.  E1M5 occasional intermission crash due to player.mdl not being resolved.  MODEL_CRUTCH
 		if (currententity->model == NULL && currententity->modelindex)
 			currententity->model = cl.model_precache[currententity->baseline.modelindex];
-#endif 		
+#endif
 
 		if (currententity->model->type != mod_brush)
 			continue;
@@ -753,7 +756,7 @@ void R_DrawBEntitiesOnList (void)
 			continue;
 
 		// Bmodel and not fully clipped ...
-		
+
 		VectorCopy (currententity->origin, r_entorigin);
 		VectorSubtract (r_origin, r_entorigin, modelorg);
 	// FIXME: is this needed?
@@ -783,7 +786,7 @@ void R_DrawBEntitiesOnList (void)
 			R_PushDlights (e);
 
 
-		} // clmodel->firstmodelsurface 
+		} // clmodel->firstmodelsurface
 
 		r_pefragtopnode = NULL;
 
@@ -901,8 +904,12 @@ void R_RenderView_ (void)
 
 	r_warpbuffer = warpbuffer;
 
-	if (sw_r_timegraph.value || r_speeds.value || sw_r_dspeeds.value)
+	if (sw_r_timegraph.value || r_speeds.value || sw_r_dspeeds.value || sw_r_limitspeed.value)
 		r_time1 = System_DoubleTime ();
+
+    if(sw_r_limitspeed.value){ //fdossena: used by r_speedlimit too
+        c_surf=0;
+    }
 
 	// Baker: Reset frame information
 	memset (&frame, 0, sizeof(frame));  // Mirror-in-scene will join this.
@@ -995,6 +1002,26 @@ void R_RenderView_ (void)
 		D_WarpScreen ();
 
 	View_SetContentsColor (cl.r_viewleaf->contents);
+
+	if(sw_r_limitspeed.value){ //fdossena: want a more 1996 experience?
+		double d = (14+((float)r_polycount/12.0)+((float)c_surf/25.0))*sw_r_limitspeed.value - 1000* (System_DoubleTime () - r_time1);
+		if(d>0){
+#ifdef _MSC_VER
+            {
+                unsigned int usec=d*1000;
+                HANDLE timer;
+                LARGE_INTEGER ft;
+                ft.QuadPart = -(10 * (__int64)usec);
+                timer = CreateWaitableTimer(NULL, TRUE, NULL);
+                SetWaitableTimer(timer, &ft, 0, NULL, NULL, 0);
+                WaitForSingleObject(timer, INFINITE);
+                CloseHandle(timer);
+            }
+#else
+            usleep(d*1000);
+#endif // _MSC_VER
+		}
+	}
 
 	if (sw_r_timegraph.value)
 		R_TimeGraph ();

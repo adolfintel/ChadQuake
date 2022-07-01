@@ -297,7 +297,7 @@ float AdaptFovx (float fov_x, float width, float height)
 {
 	float	a, x;
 	float fov_x_clamped = CLAMP(1, fov_x, 179); // Baker:  The Malice commercial Quake mod :(
-	
+
 //	if (fov_x < 1 || fov_x > 179)
 //		Host_Error ("Bad fov: %f", fov_x);
 
@@ -317,7 +317,7 @@ float CalcFovy (float fov_x, float width, float height)
 {
     float   a, x;
 	float fov_x_clamped = CLAMP(1, fov_x, 179); // Baker:  The Malice commercial Quake mod :(
-    
+
 //	if (fov_x < 1 || fov_x > 179)
 //		Host_Error ("Bad fov: %f", fov_x);
 
@@ -534,7 +534,7 @@ SCR_Init
 
 void SCR_Init (void)
 {
-	
+
 	Cmd_AddCommands (SCR_Init);
 
 	SCR_LoadPics (); //johnfitz
@@ -583,7 +583,7 @@ void SCR_DrawFPS (void)
 		if (scr_showfps.value || scr_showpos.value || display_demo || scr_showspeed.value) {
 			char			st[64];
 			int				x, y = 12;
-			
+
 			if (sb_showscores && (cls.demorecording || cl_autodemo.value) ) {
 				Draw_SetCanvas (CANVAS_TOPLEFT);
 				if ( cls.demorecording) {
@@ -597,11 +597,11 @@ void SCR_DrawFPS (void)
 			}
 
 			Draw_SetCanvas (CANVAS_TOPRIGHT);
-			
+
 			if (scr_showpos.value) {
-				c_snprintf3 (st, "@ %3.0f %3.0f %3.0f", 
-					cl_entities[cl.viewentity_player].origin[0], 
-					cl_entities[cl.viewentity_player].origin[1], 
+				c_snprintf3 (st, "@ %3.0f %3.0f %3.0f",
+					cl_entities[cl.viewentity_player].origin[0],
+					cl_entities[cl.viewentity_player].origin[1],
 					cl_entities[cl.viewentity_player].origin[2]);
 				x = 320 - 8 - (strlen(st) * 8);
 				Draw_String (x, y, st);  y += 8;
@@ -821,19 +821,19 @@ void SCR_DrawCrosshair (void)
 #ifdef GLQUAKE_TEXTURE_MANAGER
 	if (crosshair_weapon_textures_found && scr_weapon_crosshair.value  ) { // Per weapon
 		int crosshair_num = Host_ActiveWeapon_0_to_24_or_Neg1 ();
-		
+
 		if (crosshair_num == -1)
 			goto missing_weapon_crosshair; // This should never happen, I don't think.
 
 		//int active_weapon = cl.stats[STAT_ACTIVEWEAPON]; // 0 = axe
 		crosshair_num = CLAMP (0 /*axe*/, crosshair_num, MAX_CROSSHAIRS_25 - 1); // IT_SUPER_LIGHTNING or maybe plaz */ ); // Automatic
-		if (!crosshair_weapon_textures [crosshair_num]) 
+		if (!crosshair_weapon_textures [crosshair_num])
 			goto missing_weapon_crosshair;  // Render a +
-	
+
 		Draw_GLTexture (crosshair_weapon_textures [crosshair_num], -15,-15,16,16);
 		return;
 	}
-		
+
 
 missing_weapon_crosshair:
 
@@ -854,7 +854,7 @@ missing_weapon_crosshair:
 #endif // GLQUAKE_TEXTURE_MANAGER
 
 	// Standard Quake crosshair
-	Draw_Character (-4, -4, '+'); 
+	Draw_Character (-4, -4, '+');
 }
 
 
@@ -1081,7 +1081,7 @@ takeshot:
 		}
 		else Con_PrintLinef ("SCR_ScreenShot_f: Couldn't create a PNG file");
 
-		return; 
+		return;
 	}
 #endif // DIRECT3D9_WRAPPER
 
@@ -1279,6 +1279,10 @@ int SCR_ModalMessage (const char *text, float timeout, cbool enter_out) //johnfi
 
 	S_ClearBuffer ();		// so dma doesn't loop current sound
 
+#ifdef CORE_SDL //fdossena: SDL "freezes" while this thread is busy before the user can see the message, so we force a redraw
+	VID_SwapBuffers ();
+#endif
+
 	time1 = System_DoubleTime () + timeout; //johnfitz -- timeout
 	time2 = 0.0f; //johnfitz -- timeout
 
@@ -1411,7 +1415,7 @@ needs almost the entire 256k of stack space!
 void SCR_UpdateScreen (void)
 {
 	static cbool zero_sized	= false;
-	
+
 
 	// Baker:  Dedicated can find its way here
 	if (isDedicated)
@@ -1440,7 +1444,7 @@ void SCR_UpdateScreen (void)
 	if (!scr_initialized || !console1.initialized)
 		return;				// not initialized yet
 
-	
+
 	VID_BeginRendering (&clx, &cly, &clwidth, &clheight);
 
 #ifdef GLQUAKE_SCALED_DRAWING
@@ -1452,7 +1456,7 @@ void SCR_UpdateScreen (void)
 		// I don't know how we could even replicate that with Visual Studio, debug mode starts with focus.
 		clwidth		= vid_width.value;
 		clheight	= vid_height.value;
-		
+
 	}
 
 	if (zero_sized || vid.consize_stale || oldsbarscale != gl_sbarscale.value || oldmenuscale != gl_menuscale.value) {
@@ -1461,11 +1465,11 @@ void SCR_UpdateScreen (void)
 		int text_height		= size > 1 ? 200 : 320;
 		int text_width_num  = clwidth  / text_width;  // 640/320 = 2, 800/320 = 2, 1280/320 = 4
 		int text_height_num = clheight / text_height;  // 480/200 = 2, 600/200 = 3, 1024/320 = 3
-		int fit_count0		= text_height_num > text_width_num ? text_width_num : text_height_num;//   c_min (text_width_num, text_height_num); // Smaller of 
+		int fit_count0		= text_height_num > text_width_num ? text_width_num : text_height_num;//   c_min (text_width_num, text_height_num); // Smaller of
 		int fit_count1		= c_max (1, fit_count0); // Floor of 1.
 		int fit_count		= scr_scaleauto.value < 0 ? 1 : fit_count1; // scaleauto -1 means off no matter what
 		float conscale_val	= scr_scaleauto.value ? fit_count : gl_conscale.value;
-		
+
 		cbool use_conwidth	= scr_scaleauto.value ? false : (gl_conwidth.value > 0); // If scaleauto is on, we don't use.
 		// Note: Removed forcing of multiple of 8
 		vid.conwidth = use_conwidth ? (int)gl_conwidth.value : (conscale_val > 0) ? (int)(clwidth/conscale_val) : clwidth;
@@ -1493,7 +1497,7 @@ void SCR_UpdateScreen (void)
 			if (size < 0)	vid.sbar_scale = 1;
 			if (!size)		vid.sbar_scale = c_max (1, gl_sbarscale.value);
 		}
-		
+
 		vid.recalc_refdef = true;
 	}
 

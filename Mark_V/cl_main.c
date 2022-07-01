@@ -66,7 +66,7 @@ void CL_ClearState (unsigned int protocol_num)
 	if (!sv.active)
 		host_protocol_datagram_maxsize = MAX_MARK_V_DATAGRAM;
 #endif // SUPPORTS_SERVER_PROTOCOL_15
-	
+
 	cl_entities = Hunk_AllocName (cl_max_edicts*sizeof(entity_t), "cl_entities");
 
 // allocate the efrags and chain together into a free list
@@ -160,14 +160,14 @@ void CL_Disconnect_f (lparse_t *unused)
 {
 // Baker --- this handles client shutdown
 
-#ifdef SUPPORTS_PQ_CL_HTTP_DOWNLOAD 
+#ifdef SUPPORTS_PQ_CL_HTTP_DOWNLOAD
 	// If an HTTP download is in progress, don't disconnect because we have the loop nested.
 	// Instead set a disconnect to true and we'll disconnect at the very next moment it is possible.  Ensures proper cleanup.
 	if (cls.download.name[0]) {
 		cls.download.disconnect = true;
 		return;
 	}
-#endif // SUPPORTS_PQ_CL_HTTP_DOWNLOAD 
+#endif // SUPPORTS_PQ_CL_HTTP_DOWNLOAD
 
 	CL_Clear_Demos_Queue (); // timedemo is a very intentional action
 
@@ -320,7 +320,7 @@ void CL_NextDemo (void)
 
 	c_snprintf1 (str, "nextstartdemo %s" NEWLINE, cls.demos[cls.demonum]);
 	Cbuf_InsertText (str);
-	
+
 	cls.demonum++;
 }
 
@@ -541,7 +541,7 @@ static void CL_RelinkEntities (void)
 	vec3_t			delta;
 	float			bobjrotate;
 	vec3_t			oldorg;
-	
+
 #ifdef GLQUAKE_SUPPORTS_QMB
 	dlight_t		*dl;
 	dlighttype_e	color_type;
@@ -551,7 +551,7 @@ static void CL_RelinkEntities (void)
 	frac = CL_LerpPoint ();
 #pragma message ("Baker: CL_Lerp point can change cl.time")
 
-#if 1 // MH has this 
+#if 1 // MH has this
 	// update frametime after CL_LerpPoint as it can change the value of cl.time
 	cl_frametime = cl.time - cl.oldtime;
 #endif
@@ -600,7 +600,7 @@ static void CL_RelinkEntities (void)
 			continue;
 		}
 
-		
+
 
 // if the object wasn't included in the last packet, remove it
 		if (ent->msgtime != cl.mtime[0])
@@ -696,7 +696,7 @@ static void CL_RelinkEntities (void)
 
 		// EF_DIMLIGHT is for powerup glows and enforcer's laser
 		if (ent->effects & EF_DIMLIGHT) {
-			DLight_Add (i, ent->origin, 200 + (rand() & 31), 0, cl.time + 0.001, /*rgb: */ 1,1,1 /*baker1*/);		
+			DLight_Add (i, ent->origin, 200 + (rand() & 31), 0, cl.time + 0.001, /*rgb: */ 1,1,1 /*baker1*/);
 		}
 
 		if (ent->effects & EF_MUZZLEFLASH)
@@ -740,7 +740,7 @@ static void CL_RelinkEntities (void)
 #ifdef GLQUAKE_SUPPORTS_QMB
 		if (frame.qmb) evaluated = QMB_Effects_Evaluate (i, ent, oldorg);
 #endif // GLQUAKE_SUPPORTS_QMB
-		
+
 		if (!evaluated)	evaluated = Clasic_Effects_Evaluate (i, ent, oldorg);  // What's this do, I forget.  Emits classic trails
 
 
@@ -749,14 +749,14 @@ static void CL_RelinkEntities (void)
 		// A spikes make bubbles, shambler charge effect.  Bubble inserted, what happens to the sprite?
 
 #ifdef GLQUAKE_SUPPORTS_QMB
-		if (frame.qmb)   
+		if (frame.qmb)
 			if (QMB_MaybeInsertEffect (ent, oldorg, i)) // Bubble, Shambler, Spikes, Laser.  Although Bubble removed.
 				continue; // We inserted an effect.  Bubble or something.
 #endif // GLQUAKE_SUPPORTS_QMB
 
 		// This should be after all the effects right?
-		// In JoeQuake things after this ... chase active skip, no draw, 
-		ent->forcelink = false; 
+		// In JoeQuake things after this ... chase active skip, no draw,
+		ent->forcelink = false;
 
 		if (ent->effects & EF_NODRAW) // Baker: Seriously.  This late in the process?  Yes.  Could be carrying effects!
 			continue;
@@ -1026,9 +1026,9 @@ Add velocity nuking like Quakespasm.
 
 void CL_Setpos_f (lparse_t *line)
 {
-	if (!sv.active) 
+	if (!sv.active)
 		Con_PrintLinef ("Server not active");
-	if (!cl.worldmodel || !sv.worldmodel) 
+	if (!cl.worldmodel || !sv.worldmodel)
 		Con_PrintLinef ("No map active");
 	else
 	{
@@ -1044,7 +1044,7 @@ void CL_Setpos_f (lparse_t *line)
 			}
 			VectorCopy (cl.stored_origin, origin);
 			VectorCopy (cl.stored_angles, angles);
-		} 
+		}
 		else if (line->count == 7)
 		{
 			origin[0] = atof(line->args[1]);
@@ -1076,7 +1076,7 @@ void CL_Setpos_f (lparse_t *line)
 					cl.noclip_anglehack = true;
 					player->v.movetype = MOVETYPE_NOCLIP;
 					Con_PrintLinef ("noclip ON");
-					
+
 				}
 			}
 		#endif
@@ -1085,8 +1085,8 @@ void CL_Setpos_f (lparse_t *line)
 		VectorClear  (player->v.velocity); // Quakespasm erases velocity
 		VectorCopy (origin, player->v.origin);
 		VectorCopy (angles, cl.viewangles);
-	} 
-	
+	}
+
 
 }
 
@@ -1141,7 +1141,7 @@ void CL_Init (void)
 #ifdef GLQUAKE_SUPPORTS_QMB
 	GameHacks_InitModelnames (); // QMB
 #endif // GLQUAKE_SUPPORTS_QMB
-	CL_InitTEnts (); // Technically should occur at game dir change time. 
+	CL_InitTEnts (); // Technically should occur at game dir change time.
 
 	Cmd_AddCommands (CL_Init);
 }

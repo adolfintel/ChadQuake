@@ -1,0 +1,2837 @@
+# depslib dependency file v1.0
+1482924504 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/base64.c
+	"core.h"
+
+1483392058 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/core.h
+	"environment.h"
+	<mach/mach_time.h>
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+	<ctype.h>
+	<stddef.h>
+	<stdarg.h>
+	<assert.h>
+	<alloca.h>
+	<io.h>
+	<direct.h>
+	"dirent_win.h"
+	<unistd.h>
+	<dirent.h>
+	<dlfcn.h>
+	<fcntl.h>
+	"pthreads_core.h"
+	<android/log.h>
+	"lists.h"
+	"file.h"
+	"interface.h"
+	"math_general.h"
+	"math_vector.h"
+	"math_matrix.h"
+	"color.h"
+	"pak.h"
+	"stringlib.h"
+	"stick.h"
+	"base64.h"
+	"zip.h"
+	"enumbits.h"
+	"timelib.h"
+	"music.h"
+	"links.h"
+	"memchain.h"
+	"memstick.h"
+	"clip.h"
+	"image.h"
+	"download.h"
+	"vidco.h"
+	"core_sdl.h"
+
+1483979069 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/environment.h
+	"TargetConditionals.h"
+	<math.h>
+
+1414821453 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/dirent_win.h
+	"environment.h"
+	<dirent.h>
+
+1431319430 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/pthreads_core.h
+	"environment.h"
+	<pthread.h>
+
+1483026412 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/lists.h
+
+1483060710 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/file.h
+	"environment.h"
+	<stdio.h>
+
+1482874250 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/interface.h
+
+1483841653 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/math_general.h
+
+1483032252 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/math_vector.h
+
+1482874205 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/math_matrix.h
+	"environment.h"
+
+1483112351 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/color.h
+
+1482874219 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/pak.h
+
+1483556216 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/stringlib.h
+	"environment.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+
+1442695823 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/stick.h
+
+1482874181 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/base64.h
+
+1418833170 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/zip.h
+
+1484666473 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/enumbits.h
+	"environment.h"
+
+1482874626 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/timelib.h
+	"environment.h"
+
+1413641504 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/music.h
+
+1482874128 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/links.h
+
+1482874227 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/memchain.h
+
+1443021049 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/memstick.h
+
+1483021778 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/clip.h
+
+1483112274 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/image.h
+	"core.h"
+	"environment.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1482925163 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/download.h
+
+1483534751 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/vidco.h
+	"vid_osx_keys.h"
+
+1482924541 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/vid_osx_keys.h
+
+1483571624 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/core_sdl.h
+	<SDL2/SDL.h>
+	<SDL.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_syswm.h>
+
+1482925255 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/clip.c
+	"core.h"
+	"clip.h"
+
+1483299248 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/color.c
+	"core.h"
+	"color.h"
+	"color_html_colors.enum.h"
+
+1435005228 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/color_html_colors.enum.h
+
+1483032172 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/core.c
+	"core.h"
+	"core_windows.h"
+	<string.h>
+	<ctype.h>
+
+1482924455 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/core_windows.h
+	<windows.h>
+	<windowsx.h>
+	<stdio.h>
+	<windows.h>
+
+1480296492 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/core_net.c
+	<stdio.h>
+
+1415125771 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/dirent_win.c
+	"environment.h"
+	"environment.h"
+	"dirent_win.h"
+	<errno.h>
+	<io.h>
+	<stdlib.h>
+	<string.h>
+
+1482925626 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/download_curl.c
+	"core.h"
+	"download_procs.h"
+	<curl/curl.h>
+
+1483021799 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/download_procs.h
+
+1484666473 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/download_http.c
+	"core.h"
+	"download_procs.h"
+
+1482924305 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/download_procs.c
+	"core.h"
+	"download_procs.h"
+
+1484208318 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/dx8_mh_wrapper.c
+	<gl/gl.h>
+	<GL/glu.h>
+	"fakegl.h"
+	"core.h"
+	<d3d8.h>
+	<d3dx8.h>
+	"gl_constants.h"
+	"dx8_mh_wrapper.h"
+
+1484589453 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/gl_constants.h
+
+1483760084 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/dx8_mh_wrapper.h
+
+1484666473 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/enumbits.c
+	"core.h"
+	"enumbits.h"
+
+1483557613 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/file.c
+	"core.h"
+	"file.h"
+	"stringlib.h"
+	<stdio.h>
+	<stdlib.h>
+
+1483569589 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/file_system.c
+	"core.h"
+	"core_windows.h"
+	<Shlwapi.h>
+	"core_sdl.h"
+
+1484701114 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/image.c
+	"core.h"
+	"image.h"
+	"jpeglib.h"
+	"lodepng.h"
+
+1483128506 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1482924951 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/interface.c
+	"core.h"
+	"environment.h"
+	"interface.h"
+	<stdio.h>
+	"file.h"
+	<time.h>
+
+1482874137 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/links.c
+	"core.h"
+	"links.h"
+
+1483030869 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/lists.c
+	"core.h"
+	"lists.h"
+
+1482874238 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/lodepng.c
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1482924305 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/math_general.c
+	"core.h"
+	"math_general.h"
+
+1483569589 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/math_matrix.c
+	"core.h"
+	"math_matrix.h"
+	<math.h>
+	<stdlib.h>
+	<string.h>
+
+1483128466 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/math_vector.c
+	"core.h"
+	"math_vector.h"
+
+1482928006 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/memchain.c
+	"core.h"
+	"memchain.h"
+
+1443021049 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/memstick.c
+	"core.h"
+	"stick.h"
+	"memstick.h"
+
+1483618732 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/music_cd_win.c
+	"environment.h"
+	"core.h"
+	"core_windows.h"
+
+1483109025 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/music_mp3_win.c
+	"environment.h"
+	"core.h"
+	"core_windows.h"
+	<objbase.h>
+	<dshow.h>
+
+1484097583 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/net_simple.c
+	"core.h"
+	"core_net_sys.h"
+	"net_simple.h"
+
+1482874576 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/core_net_sys.h
+	<sys/types.h>
+	<errno.h>
+	<stddef.h>
+	<limits.h>
+	<sys/param.h>
+	<sys/ioctl.h>
+	<sys/filio.h>
+	<sys/sockio.h>
+	<unistd.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<fcntl.h>
+	<winsock.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+
+1483022255 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/net_simple.h
+
+1483128466 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/pak.c
+	"environment.h"
+	"core.h"
+	"pak.h"
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/shell_android.c
+	"environment.h"
+	"core.h"
+	"bundle_bin2.h"
+
+1483665411 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/shell_linux.c
+	"environment.h"
+	"core.h"
+
+1483969540 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/shell_win.c
+	"environment.h"
+	"core.h"
+	"core_windows.h"
+	<Commdlg.h>
+	"Shellapi.h"
+	"Mmsystem.h"
+	<SDL2/SDL_syswm.h>
+
+1442696043 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/stick.c
+	"core.h"
+	"stick.h"
+
+1483645171 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/stringlib.c
+	"core.h"
+	"stringlib.h"
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<string.h>
+	<string.h>
+	<ctype.h>
+	<string.h>
+	<sys/cdefs.h>
+	"namespace.h"
+	<sys/localedef.h>
+	<ctype.h>
+	<locale.h>
+	<string.h>
+	<time.h>
+	<tzfile.h>
+
+1483124325 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/system.c
+	"core.h"
+	"file.h"
+	"stringlib.h"
+	<stdio.h>
+	<stdlib.h>
+
+1482925727 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/timelib.c
+	"core.h"
+
+1431309338 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/unzip_win.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"unzip_win.h"
+
+1412699246 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/unzip_win.h
+	<tchar.h>
+	<windows.h>
+
+1483026412 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/vidco.c
+	"environment.h"
+	"core.h"
+	"vidco.h"
+	"core_opengl.h"
+
+1484497727 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/core_opengl.h
+	"core_windows.h"
+	"gl_constants.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<OpenGL/glext.h>
+	<math.h>
+	<OpenGLES/ES1/gl.h>
+	<OpenGLES/ES1/glext.h>
+	<SDL2/SDL_opengl.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+
+1482333549 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/vidco_console.c
+	"environment.h"
+	"core.h"
+	"vid.h"
+
+1484188796 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/vidco_sdl.c
+	"environment.h"
+	"core.h"
+	"core_sdl.h"
+	"vidco.h"
+	"core_opengl.h"
+
+1484666747 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/vidco_win.c
+	"environment.h"
+	"core.h"
+	"core_windows.h"
+	"vidco.h"
+	"core_opengl.h"
+
+1483021835 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/zip.c
+	"environment.h"
+	"core.h"
+	"zip.h"
+	"zip_win.h"
+	"unzip_win.h"
+	"miniz.h"
+
+1412699246 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/zip_win.h
+	<tchar.h>
+	<windows.h>
+
+1478057414 /home/dosse/Desktop/1036_mark_v_source/SDK/Core/miniz.h
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<assert.h>
+	<stdio.h>
+	<sys/stat.h>
+	<sys/utime.h>
+	<sys/utime.h>
+	<sys/utime.h>
+	<sys/utime.h>
+	<utime.h>
+	<utime.h>
+
+1431309338 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Core/zip_win.cpp
+	<windows.h>
+	<stdio.h>
+	<tchar.h>
+	"zip_win.h"
+
+1430285106 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/compress.c
+	"dzip.h"
+
+1431489352 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/dzip.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"zlib/zlib.h"
+
+1430540679 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/zlib.h
+	"zconf.h"
+
+899920528 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/zconf.h
+	<windows.h>
+	<windows.h>
+	<sys/types.h>
+	<unistd.h>
+
+1482878206 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/conmain.c
+	"dzip.h"
+	"dzipcon.h"
+	<stdio.h>
+
+1430280034 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/dzipcon.h
+	<windows.h>
+	<stdarg.h>
+	<errno.h>
+	<time.h>
+	<utime.h>
+	<sys/stat.h>
+	<dirent.h>
+	<unistd.h>
+
+1411016993 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/crc32.c
+
+1026855946 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/decode.c
+	"dzip.h"
+
+1432163895 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/delete.c
+	"dzip.h"
+	"dzipcon.h"
+
+1482867501 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/encode.c
+	"dzip.h"
+
+1430285109 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/list.c
+	"dzip.h"
+	"dzipcon.h"
+
+1430540465 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/mainx.c
+	"dzip.h"
+
+1482867501 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/uncompress.c
+	"dzip.h"
+	"dzipcon.h"
+
+1482867501 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/v1code.c
+	"dzip.h"
+	"dzipcon.h"
+
+886425156 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/adler32.c
+	"zlib.h"
+
+1430377395 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/deflate.c
+	"deflate.h"
+
+981830092 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/deflate.h
+	"zutil.h"
+
+981828148 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/zutil.h
+	"zlib.h"
+	<stddef.h>
+	<string.h>
+	<stdlib.h>
+	<errno.h>
+	<alloc.h>
+	<malloc.h>
+	<unix.h>
+	<stdio.h>
+
+1411015280 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/infblock.c
+	"zutil.h"
+	"infblock.h"
+	"inftrees.h"
+	"infcodes.h"
+	"infutil.h"
+
+885204592 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/infblock.h
+
+889997118 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/inftrees.h
+
+884877386 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/infcodes.h
+
+1432159484 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/infutil.h
+
+1025739730 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/infcodes.c
+	"zutil.h"
+	"inftrees.h"
+	"infblock.h"
+	"infcodes.h"
+	"infutil.h"
+	"inffast.h"
+
+884877386 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/inffast.h
+
+1019750532 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/inffast.c
+	"zutil.h"
+	"inftrees.h"
+	"infblock.h"
+	"infcodes.h"
+	"infutil.h"
+	"inffast.h"
+
+1411015280 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/inflate.c
+	"zutil.h"
+	"infblock.h"
+
+1432164396 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/inftrees.c
+	"zutil.h"
+	"inftrees.h"
+	"inffixed.h"
+
+897996590 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/inffixed.h
+
+981168036 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/infutil.c
+	"zutil.h"
+	"infblock.h"
+	"inftrees.h"
+	"infcodes.h"
+	"infutil.h"
+
+1482878303 source:/home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/trees.c
+	"deflate.h"
+	<ctype.h>
+	"trees.h"
+	<stdio.h>
+
+888318896 /home/dosse/Desktop/1036_mark_v_source/SDK/Dzip/zlib/trees.h
+
+1482867501 source:/home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/API/HTTPClient.c
+	"HTTPClient.h"
+	"HTTPClientAuth.h"
+	"HTTPClientString.h"
+	<fcntl.h>
+	"core.h"
+	"download_procs.h"
+
+1478875073 /home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/API/HTTPClient.h
+	"HTTPClientWrapper.h"
+	"HTTPClientCommon.h"
+
+1482878253 /home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/API/HTTPClientWrapper.h
+	<stdlib.h>
+	<string.h>
+	<memory.h>
+	<stdio.h>
+	<ctype.h>
+	<time.h>
+	<winsock.h>
+	<unistd.h>
+	<errno.h>
+	<pthread.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<time.h>
+	<sys/socket.h>
+	<sys/un.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<netdb.h>
+	<arpa/inet.h>
+	<sys/ioctl.h>
+	<errno.h>
+	<stdarg.h>
+
+1153223006 /home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/API/HTTPClientCommon.h
+
+1153216902 /home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/API/HTTPClientAuth.h
+	"HTTPClientWrapper.h"
+
+1152775142 /home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/API/HTTPClientString.h
+	"HTTPClientWrapper.h"
+	"HTTPClient.h"
+
+1416836404 source:/home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/API/HTTPClientAuth.c
+	"HTTPClientAuth.h"
+
+1416832638 source:/home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/API/HTTPClientString.c
+	"HTTPClient.h"
+	"HTTPClientWrapper.h"
+
+1483645171 source:/home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/API/HTTPClientWrapper.c
+	"HTTPClientWrapper.h"
+	<sys/time.h>
+
+1482878223 source:/home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/HTTPClientSample.c
+	"HTTPClientSample.h"
+	"core.h"
+	"download_procs.h"
+
+1431489352 /home/dosse/Desktop/1036_mark_v_source/SDK/HTTPClient/HTTPClientSample.h
+	<stdio.h>
+	"API/HTTPClient.h"
+
+1483185841 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/buffers.c
+	"quakedef.h"
+
+1656102831 /home/dosse/Desktop/1036_mark_v_source/Mark_V/quakedef.h
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"buffers.h"
+	"common.h"
+	"bspfile.h"
+	"sys.h"
+	"zone.h"
+	"q_mathlib.h"
+	"cvar.h"
+	"protocol.h"
+	"net_admin.h"
+	"net.h"
+	"cmd.h"
+	"crc.h"
+	"progs.h"
+	"server.h"
+	"text_undo.h"
+	"text_edit.h"
+	"console.h"
+	"wad.h"
+	"vid.h"
+	"screen.h"
+	"draw.h"
+	"render.h"
+	"view.h"
+	"sbar.h"
+	"q_sound.h"
+	"client.h"
+	"model.h"
+	"d_iface.h"
+	"world.h"
+	"gl_texmgr.h"
+	"input.h"
+	"text_history.h"
+	"keys.h"
+	"menu.h"
+	"q_music.h"
+	"gl_renderer.h"
+	"glquake.h"
+	"core_opengl.h"
+	"gl_renderer.h"
+	"r_local.h"
+	"d_local.h"
+	"nehahra.h"
+	"q_image.h"
+	"movie.h"
+	"talk_macro.h"
+	"q_lists.h"
+	"location.h"
+	"tool_inspector.h"
+	"tool_texturepointer.h"
+	"recent_file.h"
+	"download.h"
+	"utilities.h"
+
+1480291242 /home/dosse/Desktop/1036_mark_v_source/Mark_V/q_stdinc.h
+	<sys/types.h>
+	<stddef.h>
+	<limits.h>
+	<msinttypes/stdint.h>
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	<strings.h>
+
+1253541086 /home/dosse/Desktop/1036_mark_v_source/SDK/msinttypes/stdint.h
+	<limits.h>
+	<wchar.h>
+
+1411745734 /home/dosse/Desktop/1036_mark_v_source/Mark_V/arch_def.h
+
+1413322763 /home/dosse/Desktop/1036_mark_v_source/Mark_V/buffers.h
+
+1483184640 /home/dosse/Desktop/1036_mark_v_source/Mark_V/common.h
+
+1480845733 /home/dosse/Desktop/1036_mark_v_source/Mark_V/bspfile.h
+
+1483618154 /home/dosse/Desktop/1036_mark_v_source/Mark_V/sys.h
+
+1477975087 /home/dosse/Desktop/1036_mark_v_source/Mark_V/zone.h
+
+1478057414 /home/dosse/Desktop/1036_mark_v_source/Mark_V/q_mathlib.h
+	<math.h>
+
+1479235170 /home/dosse/Desktop/1036_mark_v_source/Mark_V/cvar.h
+	"cvar_list_sheet.h"
+
+1520169948 /home/dosse/Desktop/1036_mark_v_source/Mark_V/cvar_list_sheet.h
+
+1480568560 /home/dosse/Desktop/1036_mark_v_source/Mark_V/protocol.h
+
+1482866567 /home/dosse/Desktop/1036_mark_v_source/Mark_V/net_admin.h
+
+1478762786 /home/dosse/Desktop/1036_mark_v_source/Mark_V/net.h
+
+1483122031 /home/dosse/Desktop/1036_mark_v_source/Mark_V/cmd.h
+
+1428440908 /home/dosse/Desktop/1036_mark_v_source/Mark_V/crc.h
+
+1482867975 /home/dosse/Desktop/1036_mark_v_source/Mark_V/progs.h
+	"pr_comp.h"
+	"progdefs.h"
+
+1411745541 /home/dosse/Desktop/1036_mark_v_source/Mark_V/pr_comp.h
+
+1411745536 /home/dosse/Desktop/1036_mark_v_source/Mark_V/progdefs.h
+	"progdefs.q1"
+
+1202039574 /home/dosse/Desktop/1036_mark_v_source/Mark_V/progdefs.q1
+
+1483121112 /home/dosse/Desktop/1036_mark_v_source/Mark_V/server.h
+
+1429903477 /home/dosse/Desktop/1036_mark_v_source/Mark_V/text_undo.h
+
+1430236010 /home/dosse/Desktop/1036_mark_v_source/Mark_V/text_edit.h
+
+1483299035 /home/dosse/Desktop/1036_mark_v_source/Mark_V/console.h
+
+1478882474 /home/dosse/Desktop/1036_mark_v_source/Mark_V/wad.h
+
+1520172930 /home/dosse/Desktop/1036_mark_v_source/Mark_V/vid.h
+
+1412324107 /home/dosse/Desktop/1036_mark_v_source/Mark_V/screen.h
+
+1479874572 /home/dosse/Desktop/1036_mark_v_source/Mark_V/draw.h
+
+1484527876 /home/dosse/Desktop/1036_mark_v_source/Mark_V/render.h
+
+1428582144 /home/dosse/Desktop/1036_mark_v_source/Mark_V/view.h
+
+1411745234 /home/dosse/Desktop/1036_mark_v_source/Mark_V/sbar.h
+
+1483552336 /home/dosse/Desktop/1036_mark_v_source/Mark_V/q_sound.h
+
+1483405675 /home/dosse/Desktop/1036_mark_v_source/Mark_V/client.h
+
+1484536495 /home/dosse/Desktop/1036_mark_v_source/Mark_V/model.h
+	"modelgen.h"
+	"spritegn.h"
+
+1411745594 /home/dosse/Desktop/1036_mark_v_source/Mark_V/modelgen.h
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	"cmdlib.h"
+	"scriplib.h"
+	"trilib.h"
+	"lbmlib.h"
+	"mathlib.h"
+
+1411745224 /home/dosse/Desktop/1036_mark_v_source/Mark_V/spritegn.h
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	"cmdlib.h"
+	"scriplib.h"
+	"dictlib.h"
+	"trilib.h"
+	"lbmlib.h"
+	"mathlib.h"
+
+1479270757 /home/dosse/Desktop/1036_mark_v_source/Mark_V/d_iface.h
+
+1480483424 /home/dosse/Desktop/1036_mark_v_source/Mark_V/world.h
+
+1484709635 /home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_texmgr.h
+
+1484209504 /home/dosse/Desktop/1036_mark_v_source/Mark_V/input.h
+
+1429655220 /home/dosse/Desktop/1036_mark_v_source/Mark_V/text_history.h
+
+1482867168 /home/dosse/Desktop/1036_mark_v_source/Mark_V/keys.h
+	"keys_mac_old.h"
+
+1480363156 /home/dosse/Desktop/1036_mark_v_source/Mark_V/keys_mac_old.h
+
+1477376160 /home/dosse/Desktop/1036_mark_v_source/Mark_V/menu.h
+
+1478243402 /home/dosse/Desktop/1036_mark_v_source/Mark_V/q_music.h
+
+1484271577 /home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_renderer.h
+	"core_opengl.h"
+	"dx8_mh_wrapper.h"
+	"dx9_mh_wrapper.h"
+
+1484543164 /home/dosse/Desktop/1036_mark_v_source/Mark_V/glquake.h
+
+1484268924 /home/dosse/Desktop/1036_mark_v_source/Mark_V/r_local.h
+	"r_shared.h"
+
+1430072279 /home/dosse/Desktop/1036_mark_v_source/Mark_V/r_shared.h
+
+1478769011 /home/dosse/Desktop/1036_mark_v_source/Mark_V/d_local.h
+	"r_shared.h"
+
+1477681407 /home/dosse/Desktop/1036_mark_v_source/Mark_V/nehahra.h
+	<fmod/fmod.h>
+
+1086086624 /home/dosse/Desktop/1036_mark_v_source/SDK/fmod/fmod.h
+
+1428428691 /home/dosse/Desktop/1036_mark_v_source/Mark_V/q_image.h
+
+1412490880 /home/dosse/Desktop/1036_mark_v_source/Mark_V/movie.h
+
+1411606153 /home/dosse/Desktop/1036_mark_v_source/Mark_V/talk_macro.h
+
+1479111513 /home/dosse/Desktop/1036_mark_v_source/Mark_V/q_lists.h
+
+1478873303 /home/dosse/Desktop/1036_mark_v_source/Mark_V/location.h
+
+1411606134 /home/dosse/Desktop/1036_mark_v_source/Mark_V/tool_inspector.h
+
+1411606095 /home/dosse/Desktop/1036_mark_v_source/Mark_V/tool_texturepointer.h
+
+1411606543 /home/dosse/Desktop/1036_mark_v_source/Mark_V/recent_file.h
+
+1433233342 /home/dosse/Desktop/1036_mark_v_source/Mark_V/utilities.h
+
+1656099892 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/cd_sdl.c
+	"quakedef.h"
+	"SDL2/SDL.h"
+	"SDL2/SDL_mixer.h"
+
+1484596742 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/cd_win.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+
+1484206664 /home/dosse/Desktop/1036_mark_v_source/Mark_V/winquake.h
+	<core_windows.h>
+	<dsound.h>
+
+1484596786 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/chase.c
+	"quakedef.h"
+
+1484536057 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/cl_demo.c
+	"quakedef.h"
+
+1483116781 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/cl_input.c
+	"quakedef.h"
+
+1656100141 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/cl_main.c
+	"quakedef.h"
+
+1484101115 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/cl_parse.c
+	"quakedef.h"
+	"net_admin.h"
+
+1483116275 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/cl_tent.c
+	"quakedef.h"
+
+1483199241 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/cmd.c
+	"quakedef.h"
+	"cmd_list_sheet.h"
+	"cmd_list_sheet.h"
+
+1484706279 /home/dosse/Desktop/1036_mark_v_source/Mark_V/cmd_list_sheet.h
+
+1483966233 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/common.c
+	"quakedef.h"
+	"common.h"
+	<errno.h>
+
+1483932424 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/console.c
+	"environment.h"
+	"quakedef.h"
+	<unistd.h>
+
+1428440872 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/crc.c
+	"quakedef.h"
+	"crc.h"
+
+1484847093 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/cvar.c
+	"quakedef.h"
+	"cvar_list_sheet.h"
+	"cvar_list_sheet.h"
+
+1483844626 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_edge.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_fill.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_init.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_modech.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_part.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_polyse.c
+	"quakedef.h"
+	"adivtab.h"
+
+1225321200 /home/dosse/Desktop/1036_mark_v_source/Mark_V/adivtab.h
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_scan.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_sky.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_sprite.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_surf.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_vars.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/d_zpoint.c
+	"quakedef.h"
+
+1483123772 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/dedicated.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/dedicated_win.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+	"dedicated_win.h"
+
+1412048908 /home/dosse/Desktop/1036_mark_v_source/Mark_V/dedicated_win.h
+
+1520188316 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/draw.c
+	"quakedef.h"
+	"mark_v_lmp.h"
+
+1408313249 /home/dosse/Desktop/1036_mark_v_source/Mark_V/mark_v_lmp.h
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/dshow_mp3.c
+	"quakedef.h"
+	"winquake.h"
+	<objbase.h>
+	<dshow.h>
+
+1484618792 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_alias.c
+	"quakedef.h"
+	"anorms.h"
+	"anorm_dots.h"
+
+1411745740 /home/dosse/Desktop/1036_mark_v_source/Mark_V/anorms.h
+
+1411745744 /home/dosse/Desktop/1036_mark_v_source/Mark_V/anorm_dots.h
+
+1484596646 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_bloom.c
+	"quakedef.h"
+
+1484618792 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_brush.c
+	"quakedef.h"
+
+1484278405 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_common.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_draw.c
+	"quakedef.h"
+	"mark_v_lmp.h"
+
+1483843724 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_fog.c
+	"quakedef.h"
+
+1484272414 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_mesh.c
+	"quakedef.h"
+
+1484850097 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_renderer.c
+	"quakedef.h"
+
+1484543072 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_rmain.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_rmisc.c
+	"quakedef.h"
+
+1484732929 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_sky.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_sprite.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_test.c
+	"quakedef.h"
+
+1484861298 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_texmgr.c
+	"quakedef.h"
+
+1484846370 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_warp.c
+	"quakedef.h"
+	"gl_warp_sin.h"
+
+1411745618 /home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_warp_sin.h
+
+1483843724 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/gl_world.c
+	"quakedef.h"
+
+1484097948 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/host.c
+	"quakedef.h"
+	<setjmp.h>
+
+1520146150 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/host_cmd.c
+	"quakedef.h"
+
+1656101385 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/in_sdl.c
+	"quakedef.h"
+	"sdlquake.h"
+
+1483669890 /home/dosse/Desktop/1036_mark_v_source/Mark_V/sdlquake.h
+	<SDL2/SDL.h>
+	<core_windows.h>
+	<SDL2/SDL.h>
+
+1483542548 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/in_win.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+
+1656102610 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/input.c
+	"quakedef.h"
+
+1520146352 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/keys.c
+	"quakedef.h"
+	"keys.h"
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/location.c
+	"quakedef.h"
+
+1496992102 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/main_central.c
+	"quakedef.h"
+
+1656100739 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/menu.c
+	"quakedef.h"
+
+1484523750 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/model.c
+	"quakedef.h"
+
+1483189759 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/movie.c
+	"quakedef.h"
+
+1483122640 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/movie_win.c
+	"quakedef.h"
+	<windows.h>
+	<vfw.h>
+
+1483197745 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/nehahra.c
+	"quakedef.h"
+	"winquake.h"
+	<fmod/fmod.h>
+	<fmod/fmod_errors.h>
+	<dlfcn.h>
+
+1081856648 /home/dosse/Desktop/1036_mark_v_source/SDK/fmod/fmod_errors.h
+
+1484666713 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/net_admin.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"download_procs.h"
+	"core_net_sys.h"
+	"net_simple.h"
+
+1482872147 /home/dosse/Desktop/1036_mark_v_source/Mark_V/net_sys.h
+	<sys/types.h>
+	<errno.h>
+	<stddef.h>
+	<limits.h>
+	<sys/param.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<fcntl.h>
+	<winsock.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+
+1476993360 /home/dosse/Desktop/1036_mark_v_source/Mark_V/net_defs.h
+	"quakedef.h"
+
+1478134831 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/net_bsd.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"net_dgrm.h"
+	"net_loop.h"
+	"net_udp.h"
+
+1477013999 /home/dosse/Desktop/1036_mark_v_source/Mark_V/net_dgrm.h
+
+1477015277 /home/dosse/Desktop/1036_mark_v_source/Mark_V/net_loop.h
+
+1477018858 /home/dosse/Desktop/1036_mark_v_source/Mark_V/net_udp.h
+
+1484097818 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/net_dgrm.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"net_dgrm.h"
+	<time.h>
+
+1483117066 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/net_loop.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"net_loop.h"
+
+1484097818 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/net_main.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+
+1483183821 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/net_udp.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"net_udp.h"
+	"wsaerror.h"
+
+1477954634 /home/dosse/Desktop/1036_mark_v_source/Mark_V/wsaerror.h
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/pr_cmds.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/pr_edict.c
+	"quakedef.h"
+
+1483198429 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/pr_exec.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/q_image.c
+	"quakedef.h"
+	"q_image.h"
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/q_lists.c
+	"quakedef.h"
+
+1483129723 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/q_mathlib.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/q_music.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_aclip.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_alias.c
+	"quakedef.h"
+	"anorms.h"
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_bsp.c
+	"quakedef.h"
+
+1483967406 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_common.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_draw.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_edge.c
+	"quakedef.h"
+
+1483143953 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_efrag.c
+	"quakedef.h"
+
+1479668025 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_light.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_main.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_misc.c
+	"quakedef.h"
+
+1484536372 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_part.c
+	"quakedef.h"
+
+1484531741 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_part_qmb.c
+	"quakedef.h"
+	<assert.h>
+	"mark_v_qmb.h"
+
+1484531575 /home/dosse/Desktop/1036_mark_v_source/Mark_V/mark_v_qmb.h
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_sky.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_sprite.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/r_surf.c
+	"quakedef.h"
+
+1483116300 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/recent_file.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/sbar.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/screen.c
+	"quakedef.h"
+
+1482885914 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/sdl_main.c
+
+1483717208 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/snd_dma.c
+	"quakedef.h"
+	"winquake.h"
+
+1483183534 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/snd_mem.c
+	"quakedef.h"
+
+1483116948 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/snd_mix.c
+	"quakedef.h"
+	"winquake.h"
+
+1483552825 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/snd_sdl.c
+	"quakedef.h"
+	"sdlquake.h"
+
+1483632293 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/snd_win.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+
+1484536057 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/sv_main.c
+	"quakedef.h"
+
+1483116304 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/sv_move.c
+	"quakedef.h"
+
+1483140257 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/sv_phys.c
+	"quakedef.h"
+
+1483183424 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/sv_user.c
+	"quakedef.h"
+
+1483973755 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/sys_sdl.c
+	"quakedef.h"
+	"sdlquake.h"
+	<signal.h>
+
+1484689390 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/sys_win.c
+	"environment.h"
+	<limits.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<direct.h>
+	<time.h>
+	"quakedef.h"
+	"winquake.h"
+	"resource.h"
+	"dedicated_win.h"
+
+1411606543 /home/dosse/Desktop/1036_mark_v_source/Mark_V/resource.h
+
+1483186438 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/talk_macro.c
+	"quakedef.h"
+
+1430236025 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/text_autocomplete.c
+
+1430236025 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/text_edit.c
+
+1432288536 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/text_history.c
+	"quakedef.h"
+
+1430236025 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/text_key.c
+
+1483186438 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/text_undo.c
+	"quakedef.h"
+
+1483979913 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/tool_inspector.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/tool_texturepointer.c
+	"quakedef.h"
+
+1483745075 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/utilities.c
+	"utilities.h"
+	"quakedef.h"
+	"utilities.h"
+
+1433859248 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/utilities_install.c
+	"quakedef.h"
+	"utilities.h"
+
+1484670484 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/vid.c
+	"quakedef.h"
+
+1484209190 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/vid_sdlgl.c
+	"quakedef.h"
+	"sdlquake.h"
+	"vid_wglext.h"
+
+1368691422 /home/dosse/Desktop/1036_mark_v_source/Mark_V/vid_wglext.h
+	<windows.h>
+
+1484209149 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/vid_sdlwin.c
+	"quakedef.h"
+	"sdlquake.h"
+
+1484850114 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/vid_wgl.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+	"resource.h"
+	"vid_wglext.h"
+
+1484695202 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/vid_wsoft.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+	"resource.h"
+
+1484495607 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/vid_wsoftgl.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+	"resource.h"
+
+1483116126 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/view.c
+	"quakedef.h"
+
+1483559588 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/wad.c
+	"quakedef.h"
+
+1483116812 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/world.c
+	"quakedef.h"
+
+1483298374 source:/home/dosse/Desktop/1036_mark_v_source/Mark_V/zone.c
+	"quakedef.h"
+
+1482924504 source:/home/dosse/Desktop/chad_1038/SDK/Core/base64.c
+	"core.h"
+
+1483392058 /home/dosse/Desktop/chad_1038/SDK/Core/core.h
+	"environment.h"
+	<mach/mach_time.h>
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<time.h>
+	<ctype.h>
+	<stddef.h>
+	<stdarg.h>
+	<assert.h>
+	<alloca.h>
+	<io.h>
+	<direct.h>
+	"dirent_win.h"
+	<unistd.h>
+	<dirent.h>
+	<dlfcn.h>
+	<fcntl.h>
+	"pthreads_core.h"
+	<android/log.h>
+	"lists.h"
+	"file.h"
+	"interface.h"
+	"math_general.h"
+	"math_vector.h"
+	"math_matrix.h"
+	"color.h"
+	"pak.h"
+	"stringlib.h"
+	"stick.h"
+	"base64.h"
+	"zip.h"
+	"enumbits.h"
+	"timelib.h"
+	"music.h"
+	"links.h"
+	"memchain.h"
+	"memstick.h"
+	"clip.h"
+	"image.h"
+	"download.h"
+	"vidco.h"
+	"core_sdl.h"
+
+1656143700 /home/dosse/Desktop/chad_1038/SDK/Core/environment.h
+	"TargetConditionals.h"
+	<math.h>
+
+1414821453 /home/dosse/Desktop/chad_1038/SDK/Core/dirent_win.h
+	"environment.h"
+	<dirent.h>
+
+1431319430 /home/dosse/Desktop/chad_1038/SDK/Core/pthreads_core.h
+	"environment.h"
+	<pthread.h>
+
+1483026412 /home/dosse/Desktop/chad_1038/SDK/Core/lists.h
+
+1483060710 /home/dosse/Desktop/chad_1038/SDK/Core/file.h
+	"environment.h"
+	<stdio.h>
+
+1482874250 /home/dosse/Desktop/chad_1038/SDK/Core/interface.h
+
+1483841653 /home/dosse/Desktop/chad_1038/SDK/Core/math_general.h
+
+1483032252 /home/dosse/Desktop/chad_1038/SDK/Core/math_vector.h
+
+1482874205 /home/dosse/Desktop/chad_1038/SDK/Core/math_matrix.h
+	"environment.h"
+
+1483112351 /home/dosse/Desktop/chad_1038/SDK/Core/color.h
+
+1482874219 /home/dosse/Desktop/chad_1038/SDK/Core/pak.h
+
+1483556216 /home/dosse/Desktop/chad_1038/SDK/Core/stringlib.h
+	"environment.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+
+1442695823 /home/dosse/Desktop/chad_1038/SDK/Core/stick.h
+
+1482874181 /home/dosse/Desktop/chad_1038/SDK/Core/base64.h
+
+1418833170 /home/dosse/Desktop/chad_1038/SDK/Core/zip.h
+
+1484666473 /home/dosse/Desktop/chad_1038/SDK/Core/enumbits.h
+	"environment.h"
+
+1482874626 /home/dosse/Desktop/chad_1038/SDK/Core/timelib.h
+	"environment.h"
+
+1413641504 /home/dosse/Desktop/chad_1038/SDK/Core/music.h
+
+1482874128 /home/dosse/Desktop/chad_1038/SDK/Core/links.h
+
+1482874227 /home/dosse/Desktop/chad_1038/SDK/Core/memchain.h
+
+1443021049 /home/dosse/Desktop/chad_1038/SDK/Core/memstick.h
+
+1483021778 /home/dosse/Desktop/chad_1038/SDK/Core/clip.h
+
+1483112274 /home/dosse/Desktop/chad_1038/SDK/Core/image.h
+	"core.h"
+	"environment.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1482925163 /home/dosse/Desktop/chad_1038/SDK/Core/download.h
+
+1483534751 /home/dosse/Desktop/chad_1038/SDK/Core/vidco.h
+	"vid_osx_keys.h"
+
+1482924541 /home/dosse/Desktop/chad_1038/SDK/Core/vid_osx_keys.h
+
+1483571624 /home/dosse/Desktop/chad_1038/SDK/Core/core_sdl.h
+	<SDL2/SDL.h>
+	<SDL.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_syswm.h>
+
+1482925255 source:/home/dosse/Desktop/chad_1038/SDK/Core/clip.c
+	"core.h"
+	"clip.h"
+
+1483299248 source:/home/dosse/Desktop/chad_1038/SDK/Core/color.c
+	"core.h"
+	"color.h"
+	"color_html_colors.enum.h"
+
+1435005228 /home/dosse/Desktop/chad_1038/SDK/Core/color_html_colors.enum.h
+
+1483032172 source:/home/dosse/Desktop/chad_1038/SDK/Core/core.c
+	"core.h"
+	"core_windows.h"
+	<string.h>
+	<ctype.h>
+
+1482924455 /home/dosse/Desktop/chad_1038/SDK/Core/core_windows.h
+	<windows.h>
+	<windowsx.h>
+	<stdio.h>
+	<windows.h>
+
+1480296492 source:/home/dosse/Desktop/chad_1038/SDK/Core/core_net.c
+	<stdio.h>
+
+1415125771 source:/home/dosse/Desktop/chad_1038/SDK/Core/dirent_win.c
+	"environment.h"
+	"environment.h"
+	"dirent_win.h"
+	<errno.h>
+	<io.h>
+	<stdlib.h>
+	<string.h>
+
+1482925626 source:/home/dosse/Desktop/chad_1038/SDK/Core/download_curl.c
+	"core.h"
+	"download_procs.h"
+	<curl/curl.h>
+
+1483021799 /home/dosse/Desktop/chad_1038/SDK/Core/download_procs.h
+
+1484666473 source:/home/dosse/Desktop/chad_1038/SDK/Core/download_http.c
+	"core.h"
+	"download_procs.h"
+
+1482924305 source:/home/dosse/Desktop/chad_1038/SDK/Core/download_procs.c
+	"core.h"
+	"download_procs.h"
+
+1484208318 source:/home/dosse/Desktop/chad_1038/SDK/Core/dx8_mh_wrapper.c
+	<gl/gl.h>
+	<GL/glu.h>
+	"fakegl.h"
+	"core.h"
+	<d3d8.h>
+	<d3dx8.h>
+	"gl_constants.h"
+	"dx8_mh_wrapper.h"
+
+1484589453 /home/dosse/Desktop/chad_1038/SDK/Core/gl_constants.h
+
+1483760084 /home/dosse/Desktop/chad_1038/SDK/Core/dx8_mh_wrapper.h
+
+1484666473 source:/home/dosse/Desktop/chad_1038/SDK/Core/enumbits.c
+	"core.h"
+	"enumbits.h"
+
+1483557613 source:/home/dosse/Desktop/chad_1038/SDK/Core/file.c
+	"core.h"
+	"file.h"
+	"stringlib.h"
+	<stdio.h>
+	<stdlib.h>
+
+1483569589 source:/home/dosse/Desktop/chad_1038/SDK/Core/file_system.c
+	"core.h"
+	"core_windows.h"
+	<Shlwapi.h>
+	"core_sdl.h"
+
+1484701114 source:/home/dosse/Desktop/chad_1038/SDK/Core/image.c
+	"core.h"
+	"image.h"
+	"jpeglib.h"
+	"lodepng.h"
+
+1483128506 /home/dosse/Desktop/chad_1038/SDK/Core/lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1482924951 source:/home/dosse/Desktop/chad_1038/SDK/Core/interface.c
+	"core.h"
+	"environment.h"
+	"interface.h"
+	<stdio.h>
+	"file.h"
+	<time.h>
+
+1482874137 source:/home/dosse/Desktop/chad_1038/SDK/Core/links.c
+	"core.h"
+	"links.h"
+
+1483030869 source:/home/dosse/Desktop/chad_1038/SDK/Core/lists.c
+	"core.h"
+	"lists.h"
+
+1482874238 source:/home/dosse/Desktop/chad_1038/SDK/Core/lodepng.c
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1482924305 source:/home/dosse/Desktop/chad_1038/SDK/Core/math_general.c
+	"core.h"
+	"math_general.h"
+
+1483569589 source:/home/dosse/Desktop/chad_1038/SDK/Core/math_matrix.c
+	"core.h"
+	"math_matrix.h"
+	<math.h>
+	<stdlib.h>
+	<string.h>
+
+1483128466 source:/home/dosse/Desktop/chad_1038/SDK/Core/math_vector.c
+	"core.h"
+	"math_vector.h"
+
+1482928006 source:/home/dosse/Desktop/chad_1038/SDK/Core/memchain.c
+	"core.h"
+	"memchain.h"
+
+1443021049 source:/home/dosse/Desktop/chad_1038/SDK/Core/memstick.c
+	"core.h"
+	"stick.h"
+	"memstick.h"
+
+1483618732 source:/home/dosse/Desktop/chad_1038/SDK/Core/music_cd_win.c
+	"environment.h"
+	"core.h"
+	"core_windows.h"
+
+1483109025 source:/home/dosse/Desktop/chad_1038/SDK/Core/music_mp3_win.c
+	"environment.h"
+	"core.h"
+	"core_windows.h"
+	<objbase.h>
+	<dshow.h>
+
+1484097583 source:/home/dosse/Desktop/chad_1038/SDK/Core/net_simple.c
+	"core.h"
+	"core_net_sys.h"
+	"net_simple.h"
+
+1482874576 /home/dosse/Desktop/chad_1038/SDK/Core/core_net_sys.h
+	<sys/types.h>
+	<errno.h>
+	<stddef.h>
+	<limits.h>
+	<sys/param.h>
+	<sys/ioctl.h>
+	<sys/filio.h>
+	<sys/sockio.h>
+	<unistd.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<fcntl.h>
+	<winsock.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+
+1483022255 /home/dosse/Desktop/chad_1038/SDK/Core/net_simple.h
+
+1483128466 source:/home/dosse/Desktop/chad_1038/SDK/Core/pak.c
+	"environment.h"
+	"core.h"
+	"pak.h"
+
+1483556198 source:/home/dosse/Desktop/chad_1038/SDK/Core/shell_android.c
+	"environment.h"
+	"core.h"
+	"bundle_bin2.h"
+
+1483665411 source:/home/dosse/Desktop/chad_1038/SDK/Core/shell_linux.c
+	"environment.h"
+	"core.h"
+
+1483969540 source:/home/dosse/Desktop/chad_1038/SDK/Core/shell_win.c
+	"environment.h"
+	"core.h"
+	"core_windows.h"
+	<Commdlg.h>
+	"Shellapi.h"
+	"Mmsystem.h"
+	<SDL2/SDL_syswm.h>
+
+1442696043 source:/home/dosse/Desktop/chad_1038/SDK/Core/stick.c
+	"core.h"
+	"stick.h"
+
+1483645171 source:/home/dosse/Desktop/chad_1038/SDK/Core/stringlib.c
+	"core.h"
+	"stringlib.h"
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<string.h>
+	<string.h>
+	<ctype.h>
+	<string.h>
+	<sys/cdefs.h>
+	"namespace.h"
+	<sys/localedef.h>
+	<ctype.h>
+	<locale.h>
+	<string.h>
+	<time.h>
+	<tzfile.h>
+
+1483124325 source:/home/dosse/Desktop/chad_1038/SDK/Core/system.c
+	"core.h"
+	"file.h"
+	"stringlib.h"
+	<stdio.h>
+	<stdlib.h>
+
+1482925727 source:/home/dosse/Desktop/chad_1038/SDK/Core/timelib.c
+	"core.h"
+
+1431309338 source:/home/dosse/Desktop/chad_1038/SDK/Core/unzip_win.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"unzip_win.h"
+
+1412699246 /home/dosse/Desktop/chad_1038/SDK/Core/unzip_win.h
+	<tchar.h>
+	<windows.h>
+
+1483026412 source:/home/dosse/Desktop/chad_1038/SDK/Core/vidco.c
+	"environment.h"
+	"core.h"
+	"vidco.h"
+	"core_opengl.h"
+
+1484497727 /home/dosse/Desktop/chad_1038/SDK/Core/core_opengl.h
+	"core_windows.h"
+	"gl_constants.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<OpenGL/glext.h>
+	<math.h>
+	<OpenGLES/ES1/gl.h>
+	<OpenGLES/ES1/glext.h>
+	<SDL2/SDL_opengl.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+
+1482333549 source:/home/dosse/Desktop/chad_1038/SDK/Core/vidco_console.c
+	"environment.h"
+	"core.h"
+	"vid.h"
+
+1484188796 source:/home/dosse/Desktop/chad_1038/SDK/Core/vidco_sdl.c
+	"environment.h"
+	"core.h"
+	"core_sdl.h"
+	"vidco.h"
+	"core_opengl.h"
+
+1484666747 source:/home/dosse/Desktop/chad_1038/SDK/Core/vidco_win.c
+	"environment.h"
+	"core.h"
+	"core_windows.h"
+	"vidco.h"
+	"core_opengl.h"
+
+1483021835 source:/home/dosse/Desktop/chad_1038/SDK/Core/zip.c
+	"environment.h"
+	"core.h"
+	"zip.h"
+	"zip_win.h"
+	"unzip_win.h"
+	"miniz.h"
+
+1412699246 /home/dosse/Desktop/chad_1038/SDK/Core/zip_win.h
+	<tchar.h>
+	<windows.h>
+
+1478057414 /home/dosse/Desktop/chad_1038/SDK/Core/miniz.h
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<assert.h>
+	<stdio.h>
+	<sys/stat.h>
+	<sys/utime.h>
+	<sys/utime.h>
+	<sys/utime.h>
+	<sys/utime.h>
+	<utime.h>
+	<utime.h>
+
+1431309338 source:/home/dosse/Desktop/chad_1038/SDK/Core/zip_win.cpp
+	<windows.h>
+	<stdio.h>
+	<tchar.h>
+	"zip_win.h"
+
+1430285106 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/compress.c
+	"dzip.h"
+
+1431489352 /home/dosse/Desktop/chad_1038/SDK/Dzip/dzip.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"zlib/zlib.h"
+
+1430540679 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/zlib.h
+	"zconf.h"
+
+899920528 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/zconf.h
+	<windows.h>
+	<windows.h>
+	<sys/types.h>
+	<unistd.h>
+
+1482878206 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/conmain.c
+	"dzip.h"
+	"dzipcon.h"
+	<stdio.h>
+
+1430280034 /home/dosse/Desktop/chad_1038/SDK/Dzip/dzipcon.h
+	<windows.h>
+	<stdarg.h>
+	<errno.h>
+	<time.h>
+	<utime.h>
+	<sys/stat.h>
+	<dirent.h>
+	<unistd.h>
+
+1411016993 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/crc32.c
+
+1026855946 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/decode.c
+	"dzip.h"
+
+1432163895 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/delete.c
+	"dzip.h"
+	"dzipcon.h"
+
+1482867501 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/encode.c
+	"dzip.h"
+
+1430285109 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/list.c
+	"dzip.h"
+	"dzipcon.h"
+
+1430540465 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/mainx.c
+	"dzip.h"
+
+1482867501 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/uncompress.c
+	"dzip.h"
+	"dzipcon.h"
+
+1482867501 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/v1code.c
+	"dzip.h"
+	"dzipcon.h"
+
+886425156 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/adler32.c
+	"zlib.h"
+
+1430377395 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/deflate.c
+	"deflate.h"
+
+981830092 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/deflate.h
+	"zutil.h"
+
+981828148 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/zutil.h
+	"zlib.h"
+	<stddef.h>
+	<string.h>
+	<stdlib.h>
+	<errno.h>
+	<alloc.h>
+	<malloc.h>
+	<unix.h>
+	<stdio.h>
+
+1411015280 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/infblock.c
+	"zutil.h"
+	"infblock.h"
+	"inftrees.h"
+	"infcodes.h"
+	"infutil.h"
+
+885204592 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/infblock.h
+
+889997118 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/inftrees.h
+
+884877386 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/infcodes.h
+
+1432159484 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/infutil.h
+
+1025739730 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/infcodes.c
+	"zutil.h"
+	"inftrees.h"
+	"infblock.h"
+	"infcodes.h"
+	"infutil.h"
+	"inffast.h"
+
+884877386 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/inffast.h
+
+1019750532 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/inffast.c
+	"zutil.h"
+	"inftrees.h"
+	"infblock.h"
+	"infcodes.h"
+	"infutil.h"
+	"inffast.h"
+
+1411015280 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/inflate.c
+	"zutil.h"
+	"infblock.h"
+
+1432164396 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/inftrees.c
+	"zutil.h"
+	"inftrees.h"
+	"inffixed.h"
+
+897996590 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/inffixed.h
+
+981168036 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/infutil.c
+	"zutil.h"
+	"infblock.h"
+	"inftrees.h"
+	"infcodes.h"
+	"infutil.h"
+
+1482878303 source:/home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/trees.c
+	"deflate.h"
+	<ctype.h>
+	"trees.h"
+	<stdio.h>
+
+888318896 /home/dosse/Desktop/chad_1038/SDK/Dzip/zlib/trees.h
+
+1482867501 source:/home/dosse/Desktop/chad_1038/SDK/HTTPClient/API/HTTPClient.c
+	"HTTPClient.h"
+	"HTTPClientAuth.h"
+	"HTTPClientString.h"
+	<fcntl.h>
+	"core.h"
+	"download_procs.h"
+
+1478875073 /home/dosse/Desktop/chad_1038/SDK/HTTPClient/API/HTTPClient.h
+	"HTTPClientWrapper.h"
+	"HTTPClientCommon.h"
+
+1482878253 /home/dosse/Desktop/chad_1038/SDK/HTTPClient/API/HTTPClientWrapper.h
+	<stdlib.h>
+	<string.h>
+	<memory.h>
+	<stdio.h>
+	<ctype.h>
+	<time.h>
+	<winsock.h>
+	<unistd.h>
+	<errno.h>
+	<pthread.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<time.h>
+	<sys/socket.h>
+	<sys/un.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<netdb.h>
+	<arpa/inet.h>
+	<sys/ioctl.h>
+	<errno.h>
+	<stdarg.h>
+
+1153223006 /home/dosse/Desktop/chad_1038/SDK/HTTPClient/API/HTTPClientCommon.h
+
+1153216902 /home/dosse/Desktop/chad_1038/SDK/HTTPClient/API/HTTPClientAuth.h
+	"HTTPClientWrapper.h"
+
+1152775142 /home/dosse/Desktop/chad_1038/SDK/HTTPClient/API/HTTPClientString.h
+	"HTTPClientWrapper.h"
+	"HTTPClient.h"
+
+1416836404 source:/home/dosse/Desktop/chad_1038/SDK/HTTPClient/API/HTTPClientAuth.c
+	"HTTPClientAuth.h"
+
+1416832638 source:/home/dosse/Desktop/chad_1038/SDK/HTTPClient/API/HTTPClientString.c
+	"HTTPClient.h"
+	"HTTPClientWrapper.h"
+
+1483645171 source:/home/dosse/Desktop/chad_1038/SDK/HTTPClient/API/HTTPClientWrapper.c
+	"HTTPClientWrapper.h"
+	<sys/time.h>
+
+1482878223 source:/home/dosse/Desktop/chad_1038/SDK/HTTPClient/HTTPClientSample.c
+	"HTTPClientSample.h"
+	"core.h"
+	"download_procs.h"
+
+1431489352 /home/dosse/Desktop/chad_1038/SDK/HTTPClient/HTTPClientSample.h
+	<stdio.h>
+	"API/HTTPClient.h"
+
+1483185841 source:/home/dosse/Desktop/chad_1038/Mark_V/buffers.c
+	"quakedef.h"
+
+1656102831 /home/dosse/Desktop/chad_1038/Mark_V/quakedef.h
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"buffers.h"
+	"common.h"
+	"bspfile.h"
+	"sys.h"
+	"zone.h"
+	"q_mathlib.h"
+	"cvar.h"
+	"protocol.h"
+	"net_admin.h"
+	"net.h"
+	"cmd.h"
+	"crc.h"
+	"progs.h"
+	"server.h"
+	"text_undo.h"
+	"text_edit.h"
+	"console.h"
+	"wad.h"
+	"vid.h"
+	"screen.h"
+	"draw.h"
+	"render.h"
+	"view.h"
+	"sbar.h"
+	"q_sound.h"
+	"client.h"
+	"model.h"
+	"d_iface.h"
+	"world.h"
+	"gl_texmgr.h"
+	"input.h"
+	"text_history.h"
+	"keys.h"
+	"menu.h"
+	"q_music.h"
+	"gl_renderer.h"
+	"glquake.h"
+	"core_opengl.h"
+	"gl_renderer.h"
+	"r_local.h"
+	"d_local.h"
+	"nehahra.h"
+	"q_image.h"
+	"movie.h"
+	"talk_macro.h"
+	"q_lists.h"
+	"location.h"
+	"tool_inspector.h"
+	"tool_texturepointer.h"
+	"recent_file.h"
+	"download.h"
+	"utilities.h"
+
+1480291242 /home/dosse/Desktop/chad_1038/Mark_V/q_stdinc.h
+	<sys/types.h>
+	<stddef.h>
+	<limits.h>
+	<msinttypes/stdint.h>
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	<strings.h>
+
+1253541086 /home/dosse/Desktop/chad_1038/SDK/msinttypes/stdint.h
+	<limits.h>
+	<wchar.h>
+
+1411745734 /home/dosse/Desktop/chad_1038/Mark_V/arch_def.h
+
+1413322763 /home/dosse/Desktop/chad_1038/Mark_V/buffers.h
+
+1483184640 /home/dosse/Desktop/chad_1038/Mark_V/common.h
+
+1480845733 /home/dosse/Desktop/chad_1038/Mark_V/bspfile.h
+
+1483618154 /home/dosse/Desktop/chad_1038/Mark_V/sys.h
+
+1477975087 /home/dosse/Desktop/chad_1038/Mark_V/zone.h
+
+1478057414 /home/dosse/Desktop/chad_1038/Mark_V/q_mathlib.h
+	<math.h>
+
+1479235170 /home/dosse/Desktop/chad_1038/Mark_V/cvar.h
+	"cvar_list_sheet.h"
+
+1656427763 /home/dosse/Desktop/chad_1038/Mark_V/cvar_list_sheet.h
+
+1480568560 /home/dosse/Desktop/chad_1038/Mark_V/protocol.h
+
+1482866567 /home/dosse/Desktop/chad_1038/Mark_V/net_admin.h
+
+1478762786 /home/dosse/Desktop/chad_1038/Mark_V/net.h
+
+1483122031 /home/dosse/Desktop/chad_1038/Mark_V/cmd.h
+
+1428440908 /home/dosse/Desktop/chad_1038/Mark_V/crc.h
+
+1482867975 /home/dosse/Desktop/chad_1038/Mark_V/progs.h
+	"pr_comp.h"
+	"progdefs.h"
+
+1411745541 /home/dosse/Desktop/chad_1038/Mark_V/pr_comp.h
+
+1411745536 /home/dosse/Desktop/chad_1038/Mark_V/progdefs.h
+	"progdefs.q1"
+
+1202039574 /home/dosse/Desktop/chad_1038/Mark_V/progdefs.q1
+
+1483121112 /home/dosse/Desktop/chad_1038/Mark_V/server.h
+
+1429903477 /home/dosse/Desktop/chad_1038/Mark_V/text_undo.h
+
+1430236010 /home/dosse/Desktop/chad_1038/Mark_V/text_edit.h
+
+1483299035 /home/dosse/Desktop/chad_1038/Mark_V/console.h
+
+1478882474 /home/dosse/Desktop/chad_1038/Mark_V/wad.h
+
+1656328732 /home/dosse/Desktop/chad_1038/Mark_V/vid.h
+
+1412324107 /home/dosse/Desktop/chad_1038/Mark_V/screen.h
+
+1479874572 /home/dosse/Desktop/chad_1038/Mark_V/draw.h
+
+1484527876 /home/dosse/Desktop/chad_1038/Mark_V/render.h
+
+1428582144 /home/dosse/Desktop/chad_1038/Mark_V/view.h
+
+1411745234 /home/dosse/Desktop/chad_1038/Mark_V/sbar.h
+
+1483552336 /home/dosse/Desktop/chad_1038/Mark_V/q_sound.h
+
+1483405675 /home/dosse/Desktop/chad_1038/Mark_V/client.h
+
+1484536495 /home/dosse/Desktop/chad_1038/Mark_V/model.h
+	"modelgen.h"
+	"spritegn.h"
+
+1411745594 /home/dosse/Desktop/chad_1038/Mark_V/modelgen.h
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	"cmdlib.h"
+	"scriplib.h"
+	"trilib.h"
+	"lbmlib.h"
+	"mathlib.h"
+
+1411745224 /home/dosse/Desktop/chad_1038/Mark_V/spritegn.h
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	"cmdlib.h"
+	"scriplib.h"
+	"dictlib.h"
+	"trilib.h"
+	"lbmlib.h"
+	"mathlib.h"
+
+1479270757 /home/dosse/Desktop/chad_1038/Mark_V/d_iface.h
+
+1480483424 /home/dosse/Desktop/chad_1038/Mark_V/world.h
+
+1484709635 /home/dosse/Desktop/chad_1038/Mark_V/gl_texmgr.h
+
+1484209504 /home/dosse/Desktop/chad_1038/Mark_V/input.h
+
+1429655220 /home/dosse/Desktop/chad_1038/Mark_V/text_history.h
+
+1482867168 /home/dosse/Desktop/chad_1038/Mark_V/keys.h
+	"keys_mac_old.h"
+
+1480363156 /home/dosse/Desktop/chad_1038/Mark_V/keys_mac_old.h
+
+1477376160 /home/dosse/Desktop/chad_1038/Mark_V/menu.h
+
+1478243402 /home/dosse/Desktop/chad_1038/Mark_V/q_music.h
+
+1484271577 /home/dosse/Desktop/chad_1038/Mark_V/gl_renderer.h
+	"core_opengl.h"
+	"dx8_mh_wrapper.h"
+	"dx9_mh_wrapper.h"
+
+1484543164 /home/dosse/Desktop/chad_1038/Mark_V/glquake.h
+
+1484268924 /home/dosse/Desktop/chad_1038/Mark_V/r_local.h
+	"r_shared.h"
+
+1656328725 /home/dosse/Desktop/chad_1038/Mark_V/r_shared.h
+
+1478769011 /home/dosse/Desktop/chad_1038/Mark_V/d_local.h
+	"r_shared.h"
+
+1477681407 /home/dosse/Desktop/chad_1038/Mark_V/nehahra.h
+	<fmod/fmod.h>
+
+1086086624 /home/dosse/Desktop/chad_1038/SDK/fmod/fmod.h
+
+1428428691 /home/dosse/Desktop/chad_1038/Mark_V/q_image.h
+
+1412490880 /home/dosse/Desktop/chad_1038/Mark_V/movie.h
+
+1411606153 /home/dosse/Desktop/chad_1038/Mark_V/talk_macro.h
+
+1479111513 /home/dosse/Desktop/chad_1038/Mark_V/q_lists.h
+
+1478873303 /home/dosse/Desktop/chad_1038/Mark_V/location.h
+
+1411606134 /home/dosse/Desktop/chad_1038/Mark_V/tool_inspector.h
+
+1411606095 /home/dosse/Desktop/chad_1038/Mark_V/tool_texturepointer.h
+
+1411606543 /home/dosse/Desktop/chad_1038/Mark_V/recent_file.h
+
+1433233342 /home/dosse/Desktop/chad_1038/Mark_V/utilities.h
+
+1484596742 source:/home/dosse/Desktop/chad_1038/Mark_V/cd_win.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+
+1484206664 /home/dosse/Desktop/chad_1038/Mark_V/winquake.h
+	<core_windows.h>
+	<dsound.h>
+
+1484596786 source:/home/dosse/Desktop/chad_1038/Mark_V/chase.c
+	"quakedef.h"
+
+1484536057 source:/home/dosse/Desktop/chad_1038/Mark_V/cl_demo.c
+	"quakedef.h"
+
+1483116781 source:/home/dosse/Desktop/chad_1038/Mark_V/cl_input.c
+	"quakedef.h"
+
+1656100141 source:/home/dosse/Desktop/chad_1038/Mark_V/cl_main.c
+	"quakedef.h"
+
+1484101115 source:/home/dosse/Desktop/chad_1038/Mark_V/cl_parse.c
+	"quakedef.h"
+	"net_admin.h"
+
+1483116275 source:/home/dosse/Desktop/chad_1038/Mark_V/cl_tent.c
+	"quakedef.h"
+
+1483199241 source:/home/dosse/Desktop/chad_1038/Mark_V/cmd.c
+	"quakedef.h"
+	"cmd_list_sheet.h"
+	"cmd_list_sheet.h"
+
+1484706279 /home/dosse/Desktop/chad_1038/Mark_V/cmd_list_sheet.h
+
+1483966233 source:/home/dosse/Desktop/chad_1038/Mark_V/common.c
+	"quakedef.h"
+	"common.h"
+	<errno.h>
+
+1483932424 source:/home/dosse/Desktop/chad_1038/Mark_V/console.c
+	"environment.h"
+	"quakedef.h"
+	<unistd.h>
+
+1428440872 source:/home/dosse/Desktop/chad_1038/Mark_V/crc.c
+	"quakedef.h"
+	"crc.h"
+
+1484847093 source:/home/dosse/Desktop/chad_1038/Mark_V/cvar.c
+	"quakedef.h"
+	"cvar_list_sheet.h"
+	"cvar_list_sheet.h"
+
+1656601341 source:/home/dosse/Desktop/chad_1038/Mark_V/d_edge.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_fill.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_init.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_modech.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_part.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_polyse.c
+	"quakedef.h"
+	"adivtab.h"
+
+1225321200 /home/dosse/Desktop/chad_1038/Mark_V/adivtab.h
+
+1656601198 source:/home/dosse/Desktop/chad_1038/Mark_V/d_scan.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_sky.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_sprite.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_surf.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_vars.c
+	"quakedef.h"
+
+1483844627 source:/home/dosse/Desktop/chad_1038/Mark_V/d_zpoint.c
+	"quakedef.h"
+
+1483123772 source:/home/dosse/Desktop/chad_1038/Mark_V/dedicated.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/chad_1038/Mark_V/dedicated_win.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+	"dedicated_win.h"
+
+1412048908 /home/dosse/Desktop/chad_1038/Mark_V/dedicated_win.h
+
+1520188316 source:/home/dosse/Desktop/chad_1038/Mark_V/draw.c
+	"quakedef.h"
+	"mark_v_lmp.h"
+
+1408313249 /home/dosse/Desktop/chad_1038/Mark_V/mark_v_lmp.h
+
+1483556198 source:/home/dosse/Desktop/chad_1038/Mark_V/dshow_mp3.c
+	"quakedef.h"
+	"winquake.h"
+	<objbase.h>
+	<dshow.h>
+
+1484618792 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_alias.c
+	"quakedef.h"
+	"anorms.h"
+	"anorm_dots.h"
+
+1411745740 /home/dosse/Desktop/chad_1038/Mark_V/anorms.h
+
+1411745744 /home/dosse/Desktop/chad_1038/Mark_V/anorm_dots.h
+
+1484596646 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_bloom.c
+	"quakedef.h"
+
+1484618792 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_brush.c
+	"quakedef.h"
+
+1484278405 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_common.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_draw.c
+	"quakedef.h"
+	"mark_v_lmp.h"
+
+1483843724 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_fog.c
+	"quakedef.h"
+
+1484272414 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_mesh.c
+	"quakedef.h"
+
+1484850097 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_renderer.c
+	"quakedef.h"
+
+1484543072 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_rmain.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_rmisc.c
+	"quakedef.h"
+
+1484732929 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_sky.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_sprite.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_test.c
+	"quakedef.h"
+
+1484861298 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_texmgr.c
+	"quakedef.h"
+
+1484846370 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_warp.c
+	"quakedef.h"
+	"gl_warp_sin.h"
+
+1411745618 /home/dosse/Desktop/chad_1038/Mark_V/gl_warp_sin.h
+
+1483843724 source:/home/dosse/Desktop/chad_1038/Mark_V/gl_world.c
+	"quakedef.h"
+
+1656156818 source:/home/dosse/Desktop/chad_1038/Mark_V/host.c
+	"quakedef.h"
+	<setjmp.h>
+
+1520146150 source:/home/dosse/Desktop/chad_1038/Mark_V/host_cmd.c
+	"quakedef.h"
+
+1656101385 source:/home/dosse/Desktop/chad_1038/Mark_V/in_sdl.c
+	"quakedef.h"
+	"sdlquake.h"
+
+1483669890 /home/dosse/Desktop/chad_1038/Mark_V/sdlquake.h
+	<SDL2/SDL.h>
+	<core_windows.h>
+	<SDL2/SDL.h>
+
+1483542548 source:/home/dosse/Desktop/chad_1038/Mark_V/in_win.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+
+1656144203 source:/home/dosse/Desktop/chad_1038/Mark_V/input.c
+	"quakedef.h"
+
+1520146352 source:/home/dosse/Desktop/chad_1038/Mark_V/keys.c
+	"quakedef.h"
+	"keys.h"
+
+1483556198 source:/home/dosse/Desktop/chad_1038/Mark_V/location.c
+	"quakedef.h"
+
+1496992102 source:/home/dosse/Desktop/chad_1038/Mark_V/main_central.c
+	"quakedef.h"
+
+1656327649 source:/home/dosse/Desktop/chad_1038/Mark_V/menu.c
+	"quakedef.h"
+
+1484523750 source:/home/dosse/Desktop/chad_1038/Mark_V/model.c
+	"quakedef.h"
+
+1483189759 source:/home/dosse/Desktop/chad_1038/Mark_V/movie.c
+	"quakedef.h"
+
+1483122640 source:/home/dosse/Desktop/chad_1038/Mark_V/movie_win.c
+	"quakedef.h"
+	<windows.h>
+	<vfw.h>
+
+1483197745 source:/home/dosse/Desktop/chad_1038/Mark_V/nehahra.c
+	"quakedef.h"
+	"winquake.h"
+	<fmod/fmod.h>
+	<fmod/fmod_errors.h>
+	<dlfcn.h>
+
+1081856648 /home/dosse/Desktop/chad_1038/SDK/fmod/fmod_errors.h
+
+1484666713 source:/home/dosse/Desktop/chad_1038/Mark_V/net_admin.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"download_procs.h"
+	"core_net_sys.h"
+	"net_simple.h"
+
+1482872147 /home/dosse/Desktop/chad_1038/Mark_V/net_sys.h
+	<sys/types.h>
+	<errno.h>
+	<stddef.h>
+	<limits.h>
+	<sys/param.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<fcntl.h>
+	<winsock.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+
+1476993360 /home/dosse/Desktop/chad_1038/Mark_V/net_defs.h
+	"quakedef.h"
+
+1478134831 source:/home/dosse/Desktop/chad_1038/Mark_V/net_bsd.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"net_dgrm.h"
+	"net_loop.h"
+	"net_udp.h"
+
+1477013999 /home/dosse/Desktop/chad_1038/Mark_V/net_dgrm.h
+
+1477015277 /home/dosse/Desktop/chad_1038/Mark_V/net_loop.h
+
+1477018858 /home/dosse/Desktop/chad_1038/Mark_V/net_udp.h
+
+1484097818 source:/home/dosse/Desktop/chad_1038/Mark_V/net_dgrm.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"net_dgrm.h"
+	<time.h>
+
+1483117066 source:/home/dosse/Desktop/chad_1038/Mark_V/net_loop.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"net_loop.h"
+
+1484097818 source:/home/dosse/Desktop/chad_1038/Mark_V/net_main.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+
+1483183821 source:/home/dosse/Desktop/chad_1038/Mark_V/net_udp.c
+	<core.h>
+	"q_stdinc.h"
+	"arch_def.h"
+	"net_sys.h"
+	"quakedef.h"
+	"net_defs.h"
+	"net_udp.h"
+	"wsaerror.h"
+
+1477954634 /home/dosse/Desktop/chad_1038/Mark_V/wsaerror.h
+
+1483556198 source:/home/dosse/Desktop/chad_1038/Mark_V/pr_cmds.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/chad_1038/Mark_V/pr_edict.c
+	"quakedef.h"
+
+1483198429 source:/home/dosse/Desktop/chad_1038/Mark_V/pr_exec.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/chad_1038/Mark_V/q_image.c
+	"quakedef.h"
+	"q_image.h"
+
+1483556198 source:/home/dosse/Desktop/chad_1038/Mark_V/q_lists.c
+	"quakedef.h"
+
+1483129723 source:/home/dosse/Desktop/chad_1038/Mark_V/q_mathlib.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/chad_1038/Mark_V/q_music.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/chad_1038/Mark_V/r_aclip.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/chad_1038/Mark_V/r_alias.c
+	"quakedef.h"
+	"anorms.h"
+
+1656600364 source:/home/dosse/Desktop/chad_1038/Mark_V/r_bsp.c
+	"quakedef.h"
+
+1656600926 source:/home/dosse/Desktop/chad_1038/Mark_V/r_common.c
+	"quakedef.h"
+
+1656601271 source:/home/dosse/Desktop/chad_1038/Mark_V/r_draw.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/chad_1038/Mark_V/r_edge.c
+	"quakedef.h"
+
+1483143953 source:/home/dosse/Desktop/chad_1038/Mark_V/r_efrag.c
+	"quakedef.h"
+
+1479668025 source:/home/dosse/Desktop/chad_1038/Mark_V/r_light.c
+	"quakedef.h"
+
+1656600476 source:/home/dosse/Desktop/chad_1038/Mark_V/r_main.c
+	"quakedef.h"
+	<windows.h>
+
+1483844418 source:/home/dosse/Desktop/chad_1038/Mark_V/r_misc.c
+	"quakedef.h"
+
+1484536372 source:/home/dosse/Desktop/chad_1038/Mark_V/r_part.c
+	"quakedef.h"
+
+1484531741 source:/home/dosse/Desktop/chad_1038/Mark_V/r_part_qmb.c
+	"quakedef.h"
+	<assert.h>
+	"mark_v_qmb.h"
+
+1484531575 /home/dosse/Desktop/chad_1038/Mark_V/mark_v_qmb.h
+
+1483844418 source:/home/dosse/Desktop/chad_1038/Mark_V/r_sky.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/chad_1038/Mark_V/r_sprite.c
+	"quakedef.h"
+
+1483844418 source:/home/dosse/Desktop/chad_1038/Mark_V/r_surf.c
+	"quakedef.h"
+
+1483116300 source:/home/dosse/Desktop/chad_1038/Mark_V/recent_file.c
+	"quakedef.h"
+
+1483556198 source:/home/dosse/Desktop/chad_1038/Mark_V/sbar.c
+	"quakedef.h"
+
+1656166281 source:/home/dosse/Desktop/chad_1038/Mark_V/screen.c
+	"quakedef.h"
+
+1482885914 source:/home/dosse/Desktop/chad_1038/Mark_V/sdl_main.c
+
+1483717208 source:/home/dosse/Desktop/chad_1038/Mark_V/snd_dma.c
+	"quakedef.h"
+	"winquake.h"
+
+1483183534 source:/home/dosse/Desktop/chad_1038/Mark_V/snd_mem.c
+	"quakedef.h"
+
+1483116948 source:/home/dosse/Desktop/chad_1038/Mark_V/snd_mix.c
+	"quakedef.h"
+	"winquake.h"
+
+1483552825 source:/home/dosse/Desktop/chad_1038/Mark_V/snd_sdl.c
+	"quakedef.h"
+	"sdlquake.h"
+
+1483632293 source:/home/dosse/Desktop/chad_1038/Mark_V/snd_win.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+
+1484536057 source:/home/dosse/Desktop/chad_1038/Mark_V/sv_main.c
+	"quakedef.h"
+
+1483116304 source:/home/dosse/Desktop/chad_1038/Mark_V/sv_move.c
+	"quakedef.h"
+
+1483140257 source:/home/dosse/Desktop/chad_1038/Mark_V/sv_phys.c
+	"quakedef.h"
+
+1483183424 source:/home/dosse/Desktop/chad_1038/Mark_V/sv_user.c
+	"quakedef.h"
+
+1483973755 source:/home/dosse/Desktop/chad_1038/Mark_V/sys_sdl.c
+	"quakedef.h"
+	"sdlquake.h"
+	<signal.h>
+
+1484689390 source:/home/dosse/Desktop/chad_1038/Mark_V/sys_win.c
+	"environment.h"
+	<limits.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<direct.h>
+	<time.h>
+	"quakedef.h"
+	"winquake.h"
+	"resource.h"
+	"dedicated_win.h"
+
+1411606543 /home/dosse/Desktop/chad_1038/Mark_V/resource.h
+
+1483186438 source:/home/dosse/Desktop/chad_1038/Mark_V/talk_macro.c
+	"quakedef.h"
+
+1430236025 source:/home/dosse/Desktop/chad_1038/Mark_V/text_autocomplete.c
+
+1430236025 source:/home/dosse/Desktop/chad_1038/Mark_V/text_edit.c
+
+1432288536 source:/home/dosse/Desktop/chad_1038/Mark_V/text_history.c
+	"quakedef.h"
+
+1430236025 source:/home/dosse/Desktop/chad_1038/Mark_V/text_key.c
+
+1483186438 source:/home/dosse/Desktop/chad_1038/Mark_V/text_undo.c
+	"quakedef.h"
+
+1483979913 source:/home/dosse/Desktop/chad_1038/Mark_V/tool_inspector.c
+	"quakedef.h"
+
+1483843724 source:/home/dosse/Desktop/chad_1038/Mark_V/tool_texturepointer.c
+	"quakedef.h"
+
+1483745075 source:/home/dosse/Desktop/chad_1038/Mark_V/utilities.c
+	"utilities.h"
+	"quakedef.h"
+	"utilities.h"
+
+1433859248 source:/home/dosse/Desktop/chad_1038/Mark_V/utilities_install.c
+	"quakedef.h"
+	"utilities.h"
+
+1656356532 source:/home/dosse/Desktop/chad_1038/Mark_V/vid.c
+	"quakedef.h"
+
+1656147061 source:/home/dosse/Desktop/chad_1038/Mark_V/vid_sdlgl.c
+	"quakedef.h"
+	"sdlquake.h"
+	"vid_wglext.h"
+
+1368691422 /home/dosse/Desktop/chad_1038/Mark_V/vid_wglext.h
+	<windows.h>
+
+1656525886 source:/home/dosse/Desktop/chad_1038/Mark_V/vid_sdlwin.c
+	"quakedef.h"
+	"sdlquake.h"
+
+1484850114 source:/home/dosse/Desktop/chad_1038/Mark_V/vid_wgl.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+	"resource.h"
+	"vid_wglext.h"
+
+1484695202 source:/home/dosse/Desktop/chad_1038/Mark_V/vid_wsoft.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+	"resource.h"
+
+1484495607 source:/home/dosse/Desktop/chad_1038/Mark_V/vid_wsoftgl.c
+	"environment.h"
+	"quakedef.h"
+	"winquake.h"
+	"resource.h"
+
+1483116126 source:/home/dosse/Desktop/chad_1038/Mark_V/view.c
+	"quakedef.h"
+
+1483559588 source:/home/dosse/Desktop/chad_1038/Mark_V/wad.c
+	"quakedef.h"
+
+1483116812 source:/home/dosse/Desktop/chad_1038/Mark_V/world.c
+	"quakedef.h"
+
+1483298374 source:/home/dosse/Desktop/chad_1038/Mark_V/zone.c
+	"quakedef.h"
+
+1656419449 source:/home/dosse/Desktop/chad_1038/Mark_V/cd_sdl.c
+	"quakedef.h"
+	"environment.h"
+	"SDL2/SDL.h"
+	"SDL2/SDL_mixer.h"
+

@@ -196,7 +196,7 @@ cbool SDLQ_IN_ReadInputMessages (void *_sdl_event)
 		input_accum_y += e->motion.yrel;
 		return true;
 #endif // INPUT_RELATIVE
-	
+
 
 //	case WM_MOUSELEAVE:	 // Mouse cancel
 	//	return true; // handled
@@ -263,7 +263,7 @@ void Input_Local_SendKeyEvents (void)
 			System_Quit();
 		}
 	}
-    
+
 	SDL_Delay(1);
 }
 

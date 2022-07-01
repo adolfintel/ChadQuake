@@ -598,7 +598,7 @@ void R_RenderFace (msurface_t *fa, int clipflags)
 
 	// Manoel Kasimier - translucent water - begin
 
-	// Baker: Need to determine what kind of liquid we are
+	// Baker: Need to determine what kind of liquid we areR_RenderWorld
 	if (fa->flags & SURF_WINQUAKE_DRAWTRANSLUCENT)
 	{
 		if (fa->flags & SURF_DRAWLAVA) winquake_surface_liquid_alpha = frame.lavaalpha;

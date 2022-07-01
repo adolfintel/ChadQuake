@@ -43,8 +43,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #define	QUAKE_VERSION			1.09
 #define ENGINE_FAMILY_NAME		"Chad"				// Config.cfg stamp
-#define ENGINE_VERSION			1.37
-#define	ENGINE_BUILD			1037			// null.mdl carrying and effect in Nehahra NEH2M1 fire near Ogre + Fiend.  Does not render.
+#define ENGINE_VERSION			1.38
+#define	ENGINE_BUILD			1038			// null.mdl carrying and effect in Nehahra NEH2M1 fire near Ogre + Fiend.  Does not render.
 
 
 #define MOD_PROQUAKE_1					0x01

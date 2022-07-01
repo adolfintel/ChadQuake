@@ -145,7 +145,6 @@ int VID_SetMode (int modenum)
 
 cbool VID_Restart (int flags /* favorite vs. temp*/)
 {
-
     vmode_t		newmode = VID_Cvars_To_Mode ();
     vmode_t		oldmode = vid.screen;
     int			newmodenum;
@@ -174,7 +173,7 @@ cbool VID_Restart (int flags /* favorite vs. temp*/)
     case MODE_FULLSCREEN:
 //#if /*defined(PLATFORM_LINUX) &&*/ defined(CORE_SDL) && !defined(GLQUAKE) && defined (CORE_GL) // WinQuake GL
 #ifdef CORE_SDL
-        newmode = vid.desktop;
+
 
 #endif // CORE_SDL
         if (VID_Mode_Exists (&newmode, &newmodenum) == false)
@@ -353,7 +352,7 @@ void VID_AppActivate(cbool fActive, cbool minimize, cbool hide)
 
     vid.ActiveApp = fActive;
     vid.Minimized = minimize;
-	
+
     vid.Hidden = hide;
 
 #if 0
@@ -768,8 +767,9 @@ void	VID_Init (void)
     if (vid_fullscreen.value)
     {
         // Fucking crazy.
-        Cvar_SetValueQuick (&vid_width, vid.desktop.width);
-        Cvar_SetValueQuick (&vid_height, vid.desktop.height);
+        /*Cvar_SetValueQuick (&vid_width, vid.desktop.width);
+        Cvar_SetValueQuick (&vid_height, vid.desktop.height);*/
+        vmode_t desired=VID_Cvars_To_Mode();
         //VID_SetMode (vid_fullscreen.value ? VID_Cvars_To_Best_Fullscreen_Modenum() : MODE_WINDOWED);
     }
 #endif // #CORE_SDL
