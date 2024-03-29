@@ -1,3 +1,5 @@
+This is an example of a PR for my students, please ignore
+
 # ChadQuake
 ChadQuake is a fork of [Mark V Quake](http://quakeone.com/markv/) version 1036 with some changes to make it more similar to the original version of Quake.
 
